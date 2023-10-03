@@ -6,24 +6,19 @@
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 <title>Pronóstico de Ventas en R</title>
-<meta name="description" content="Pronóstico de Ventas  en R studio a través de los modelos ARIMA, SARIMA, ETS y TSLM. Resultados en gráficos interactivos que permiten tener un acercamiento directo a los datos y al detalle, además se podrá realizar observaciones en las distintas regiones de la serie. ."/>
-<meta name="keywords" content="pronóstico, ventas, r, rstudio, modelo, jesus zerpa">
-<meta name="author" content="jesusbz.github.io">
+<meta name="description" content="Pronóstico de Ventas  en Python a través de los modelos ARIMA, SARIMA, ETS y TSLM. Resultados en gráficos interactivos que permiten tener un acercamiento directo a los datos y al detalle, además se podrá realizar observaciones en las distintas regiones de la serie. ."/>
+<meta name="keywords" content="pronóstico, ventas, Python, modelo, cristian labra castro">
+<meta name="author" content="clabca.github.io">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title"  content= "Pronóstico de Ventas"/>
-<meta property="og:image" content= "https://jesusbz.github.io/imagenes/miniatura/imagen-a.jpg"/>
+<meta property="og:image" content= "https://clabca.github.io/imagenes/miniatura/imagen-a.jpg"/>
 <meta property="og:description"  content="Pronóstico de Ventas  en R studio a través de los modelos ARIMA, SARIMA, ETS y TSLM."/>
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jesusbz.github.io/modelo-ventas.html"/>
-<meta property="og:author" content="Jesús Benjamín Zerpa"/>
+<meta property="og:url" content="https://clabca.github.io/modelo-ventas.html"/>
+<meta property="og:author" content="Cristian Labra Castro"/>
 <meta name="twitter:card" content="summary_large_image" /> 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NC4HGWB');</script>
-<!-- End Google Tag Manager -->
+
+
 <link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
@@ -383,10 +378,7 @@ font-weight: 300;
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC4HGWB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 
 <div class="container-fluid main-container">
 
@@ -403,84 +395,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Inicio
-  </a>
+
+          
 </li>
-<li>
-  <a href="acercade.html">Acerca de</a>
-</li>
-<li>
-  <a href="formulario.html">Contacto</a>
-</li>
-<li>
-  <a href="https://rpubs.com/JesusZ"rel="nofollow" target="_blank">Rpubs</a>
-</li>          
-<li>
-  <a href="https://jesusbzerpa.github.io/"rel="nofollow" target="_blank">Mi Perfil</a>
-</li>
-<li>
-  <a href="https://jesusbezerpa.github.io/"rel="nofollow" target="_blank">Servicios</a>
-</li>          
-   <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-   Recursos
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://onedrive.live.com/download?resid=97B9EE70067CDD34%212341&authkey=ABrxoNLIj1Woc0Q">Manual Excel</a>
-    </li>
-    
-      <li>
-      <a href="https://jesusbz.github.io/cursos.html" target="_blank">Cursos</a>
-    </li>                
-   		
-      </ul>
-    </li> 
     </ul>      
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://join.skype.com/invite/vfcMypZd0Ucf" rel="nofollow" target="_blank">
-    <span class="fa fa fa fa-skype"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://t.me/jesusbz21" rel="nofollow" target="_blank">
-    <span class="fa fa fa fa-telegram"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.linkedin.com/in/jesús-zerpa-807646129/" rel="nofollow" target="_blank">
-    <span class="fab fa fab fa-linkedin"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://es.scribd.com/user/330352375/Jesus-Benjamin-Zerpa" rel="nofollow" target="_blank">
-    <span class="fa fa fa fa-scribd"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://github.com/JesusBZ" rel="nofollow" target="_blank">
-    <span class="fa fa fa fa-github"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="mailto:jesuszerpaeconomia@gmail.com">
-    <span class="far fa far fa-envelope"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
+
+  </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
@@ -492,7 +412,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <br>
 <h1 style="text-align: center;">
- Modelo de pronóstico para Ventas en Volumen en R
+ Modelo de pronóstico para Ventas en Volumen en Python
 </h1>
 <br>
 <div style="text-align: justify;">
@@ -518,34 +438,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h3>
 <span style="font-size: large;"><a name="Descripción">Descripción</a></span>
 </h3>
-<span style="font-size: large;">El siguiente entrenamiento es una traducción del trabajo de Rami Krispin (2019), Time Series Analysis and Forecasting with the TSstudio Package; con una base de datos distinta. Se utilizará la librería <a href="https://cran.r-project.org/web/packages/TSstudio/TSstudio.pdf" rel="nofollow" target="_blank">TSstudio (Versión 0.1.6)</a> para realizar  exploración de datos y elaborar pronósticos a través de los modelos <a href="https://www.rdocumentation.org/packages/forecast/versions/8.12/topics/Arima" rel="nofollow" target="_blank">ARIMA</a>, <a href="https://www.rdocumentation.org/packages/astsa/versions/1.10/topics/sarima" rel="nofollow" target="_blank">SARIMA</a>, <a href="https://www.rdocumentation.org/packages/fable/versions/0.0.0.9100/topics/ETS" rel="nofollow" target="_blank">ETS</a> y <a href="https://www.rdocumentation.org/packages/fable/versions/0.0.0.9100/topics/TSLM" rel="nofollow" target="_blank">TSLM</a>. Para completar el entrenamiento, se visualizarán los resultados en gráficos interactivos que permiten tener un acercamiento directo a los datos y al detalle, además se podrá realizar observaciones en las distintas regiones de la serie. Los datos utilizados pertenecen a las ventas en volumen (unidades) de una cadena de tiendas al detal en Venezuela para el período 2014-2019.</span>
+<span style="font-size: large;">Las proyecciones de ventas o estado de resultados en las empresas son siempre un tema complicado, donde generalmente todas las áreas de las empresas participan para hacer las proyecciones a través de supuestos de negocio. Por supuesto, todas estas proyecciones con el COVIH-19 han tenido que sufrir bastante cambios y reestructuración ya que nadie pensaba que iba a ver una pandemia en el mundo.
+
+  Generalmente, estas proyecciones son hechas por medio supuestos que no necesariamente son propios de los datos, sino que estimaciones de los equipos en base a su experiencia, lo que podría generar bastantes diferencias con la realidad. Una forma de solucionar este tipo de problemas es poder hacer estas proyecciones en base al comportamiento de los datos, más que usar supuestos para la proyección.</span>
 </div>
 <h3 style="text-align: justify;">
-<span style="font-size: large;">TSstudio</span>
+<span style="font-size: large;">Prophet</span>
 </h3>
 <div style="text-align: justify;">
-<span style="font-size: large;">El paquete a utilizar será <a href="https://cran.r-project.org/web/packages/TSstudio/TSstudio.pdf" rel="nofollow" target="_blank">TSstudio </a>el cual proporciona una serie de herramientas potentes para el análisis descriptivo y predictivo en datos de tipo temporal. Incluye funciones de preprocesamiento de datos para series temporales, visualizaciones interactivas de la librería <a href="https://plotly.com/r/" rel="nofollow" target="_blank">plotly</a>, así como configuraciones de herramientas para entrenar y evaluar en un ambiente dinámico modelos de pronósticos, contiene las funciones de <a href="https://www.rdocumentation.org/packages/itsmr/versions/1.9/topics/forecast" rel="nofollow" target="_blank">forecast</a>, forecast hybrid y <a href="https://www.rdocumentation.org/packages/bsts/versions/0.9.2/topics/bsts" rel="nofollow" target="_blank">bsts</a>.</span>
+<span style="font-size: large;">mostrare tres distintas maneras de poder hacer proyección con Python, usando la librería de Prophet, que es una forma tradicional de hacer proyección, y una manera un poco más distinta, que es usar un modelo tradicional de Machine Learning..</span>
 </div>
 <h3>
 <span style="font-size: large;"><a name="Data">1. Data</a></span>
 </h3>
 <div style="text-align: justify;">
-<span style="font-size: large;">La serie temporal está compuesta por los datos de ventas en volumen de una cadena de tiendas al detal con presencia en las principales ciudades de Venezuela, a la que denominaremos empresa “X”. El período seleccionado para el entrenamiento será 2014-2019 y para los pronósticos un horizonte a 12 meses.</span><br /> <span style="font-size: large;"><br /></span> <span style="font-size: large;">El comportamiento de los datos se analizará bajo la perspectiva de la economía venezolana. Según datos de la <a href="https://repositorio.cepal.org/bitstream/handle/11362/45000/91/BPE2019_Venezuela_es.pdf" target="_blank">CEPAL</a> [2], al cierre del 2019 la economía tuvo una contracción en su Producto Interior Bruto (PIB) del 25%, el acumulado desde el 2013 al 2019 totalizó un decrecimiento del 62%. En la esfera monetaria, se diagnosticó hiperinflación a finales del 2017, en ese sentido, el INPC anualizado a septiembre del 2019 se ubicó en 39.113%. </span><br /> <span style="font-size: large;"><br /></span> <span style="font-size: large;">Finalmente, en dicho informe, se estimó una fuerte caída de los ingresos petroleros cercana al 36% con respecto al 2018. En la esfera cambiaria,  se espera una depreciación del tipo de cambio de 4.900%. </span><br /> <span style="font-size: large;"><br /></span> <span style="font-size: large;">Para completar la escena, el país se caracteriza por inestabilidad social y política en conjunto con fuertes sanciones financieras externas que limitan el margen de maniobra del Estado. Todo esto como telón de fondo para ubicar a la empresa “X” en un mercado atomizado con presencia de nichos de diferenciación oligopólica.  </span>
+<span style="font-size: large;">Los datos son un dataset que muestra el nivel de ventas de artículos electrónicos en las sucursales de una empresa desde 2014 hasta 2019, representando cada registro el total de ventas por mes. </span>
 </div>
 <h2 style="text-align: center;">
 </h2>
 <h2 style="text-align: center;">
 </h2>
 <br>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="https://jesusbezerpa.github.io/" target="_blank"><img border="0" data-original-height="90" data-original-width="728" src="imagenes/banner2.jpg"/></div>
+
 <br>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(TSstudio)</a>
 <a class="sourceLine" id="cb1-2" title="2">Vol&lt;-<span class="kw">ts</span>(datax,<span class="dt">start=</span><span class="kw">c</span>(<span class="dv">2014</span>,<span class="dv">1</span>),<span class="dt">frequency=</span><span class="dv">12</span>)</a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="kw">ts_plot</span>(Vol,</a>
 <a class="sourceLine" id="cb1-4" title="4">        <span class="dt">title =</span> <span class="st">&quot;Ventas en Volumen Empresa X 2014-2019&quot;</span>,</a>
 <a class="sourceLine" id="cb1-5" title="5">        <span class="dt">Ytitle =</span> <span class="st">&quot;Unidades en miles&quot;</span>,</a>
-<a class="sourceLine" id="cb1-6" title="6">        <span class="dt">Xtitle =</span> <span class="st">&quot;Source: Empresa X Venezuela&quot;</span>, </a>
+<a class="sourceLine" id="cb1-6" title="6">        <span class="dt">Xtitle =</span> <span class="st">&quot;Source: Empresa X Ve &quot;</span>, </a>
 <a class="sourceLine" id="cb1-7" title="7">        <span class="dt">slider =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
 <div id="htmlwidget-bcf0c91e42d003984a26" style="width:672px;height:480px;" class="plotly html-widget"></div>
 <h3>
@@ -578,7 +499,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div>
 <div style="text-align: justify;">
-<span style="font-size: large;">Esta información proporciona una amplia comprensión del pasado y puede utilizarse para pronosticar el futuro. En el caso particular de Venezuela es complejo realizar pronósticos a largo plazo por la naturaleza misma del hábitat económico o entorno que rodea a los datos, lo que representa un reto extra para elaboración de estimaciones.</span>
+<span style="font-size: large;">Esta información proporciona una amplia comprensión del pasado y puede utilizarse para pronosticar el futuro. 
+</span>
 </div>
 <h3>
 <span style="font-size: large;"><a name="Descomposición de la serie">3. Descomposición de la serie</a></span>
@@ -668,7 +590,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <br>
 <div class="separator" style="clear: both; text-align: center;">
-<a href="https://jesusbezerpa.github.io/" target="_blank"><img border="0" data-original-height="90" data-original-width="728" src="imagenes/banner1.png"/></div>
+<a href="https://clabca.github.io/" target="_blank"><img border="0" data-original-height="90" data-original-width="728" src="imagenes/banner1.png"/></div>
 <br>
 <h3>
 <span style="font-size: large;">Serie versus rezagos I</span>
@@ -966,50 +888,18 @@ Resultado web con enlaces de partes del sitio
 </button>
 </section>
 <hr>
-<div style="text-align: center;">
-<span style="font-size: 7;"><b>Puedes compartir este material:</b></span>
-<div id="share">
 
-  <!-- facebook -->
-  <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjesusbz.github.io%2Fmodelo-ventas.html" target="_blank" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-facebook"></i></a>
 
-  <!-- twitter -->
-  <a class="twitter" href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fjesusbz.github.io%2Fmodelo-ventas.html" target="blank"  onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-twitter"></i></a>
 
-  <!-- linkedin -->
-  <a class="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://jesusbz.github.io/modelo-ventas.html" target="blank" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-linkedin"></i></a>
 
-  <!-- google plus -->
-  <a class="googleplus" href="mailto:?subject=&body=https%3A%2F%2Fjesusbz.github.io%2Fmodelo-ventas.html&recipient=" target="blank" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="far fa-envelope"></i></a>
-  
-</div>  
-</div>
-<hr>
-<h3>
-<span style="font-size: large;">Referencias</span>
-</h3>
-Rami Krispin, Time Series Analysis and Forecasting with the TSstudio Package, 2019. Recuperado de: <a href="https://rpubs.com/ramkrisp/TSstudioDemo">https://rpubs.com/ramkrisp/TSstudioDemo</a>
-</div>
-<div class="g" data-hveid="CBYQAA" style="line-height: 1.2; margin-bottom: 27px; margin-top: 0px; width: 600px;">
-[1] Comisión Económica para América Latina y el Caribe, balance Preliminar de las Economías de América Latina y el Caribe, 2019. Recuperado de <a href="https://repositorio.cepal.org/bitstream/handle/11362/45000/91/BPE2019_Venezuela_es.pdf">https://repositorio.cepal.org/bitstream/handle/11362/45000/91/BPE2019_Venezue</a><a href="https://repositorio.cepal.org/bitstream/handle/11362/45000/91/BPE2019_Venezuela_es.pdf">la_es.pdf</a>
-</div>
 </div>
 
-<div style="background-color: white; box-sizing: border-box; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; line-height: 1.7em; margin-bottom: 10px;">
-</div>
-<span style="font-size: medium;"><br /></span>
-<span style="font-size: medium;">Por:<br />Jesús Benjamín Zerpa<br /><b>Economista </b><br />JesusZerpaEconomia@Gmail.Com<span style="font-size: medium;"><span style="color: black;">
-</span></span></span><br />
-<br />
-<div style="text-align: center;">
-<div style="text-align: left;">
-<a href="https://i.creativecommons.org/l/by/4.0/88x31.png" imageanchor="1" style="clear: left; display: inline !important; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><span style="font-size: medium;">Excepto donde se indique lo contrario, el contenido de esta obra está bajo una <a href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.</span></div>
-</div>
-<div style="text-align: center;">
+
+
 <div style="text-align: left;">
 <br /></div>
 </div>
-<div id="disqus_thread"></div>
+
 <script>
 
 /**
@@ -1030,28 +920,8 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <hr />
-<h5>
-<div>
-<div style="text-align: center;">
-<span style="color: #444444;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: small;"><span style="color: #444444;">Copyright&nbsp;</span></span><span style="font-size: small;">©&nbsp;</span></span><span style="color: #444444;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: small;">2020&nbsp;</span></span><span style="font-size: small;"><a href="https://github.com/JesusBZ">Jesús B. Zerpa</a> </span><span style="color: #444444;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: small;">| Economist &amp; Data Scientist |&nbsp;Site created with</span></span><span style="color: black; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: small;">&nbsp;<a href="https://rstudio.com/" rel="nofollow" target="_blank">RStudio</a><a href="https://www.blogger.com/blogger.g?blogID=3272883731674348977"></a>&nbsp;</span></div>
-<div style="text-align: center;">
-<span style="color: blue; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: xx-small;"><br /></span></div>
-<div style="text-align: center;">
-<span style="color: #0b5394; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">| FINANCE | INTELLIGENCE BUSSINES | FORECASTING | TIME SERIES | FINANCIAL DASHBOARD | FINANCIAL BUDGET | SPATIAL ECONOMETRICS |&nbsp;</span></div>
-<!-- Add icon library -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
-<!-- Add font awesome icons -->
-<br />
-<div style="text-align: center;">
-<a class="fa fa-skype" href="https://join.skype.com/invite/vfcMypZd0Ucf" rel="nofollow" target="_blank"></a>
-    <a class="fa fa-telegram" href="https://t.me/jesusbz21" rel="nofollow" target="_blank"></a>
-    <a class="fab fa-r-project" href="https://rpubs.com/JesusZ" rel="nofollow" target="_blank"></a>
-    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/jes%C3%BAs-zerpa-807646129/" rel="nofollow" target="_blank"></a>
-     <a class="fa fa-scribd" href="https://es.scribd.com/user/330352375/Jesus-Benjamin-Zerpa" rel="nofollow" target="_blank"></a>
-    <a class="fa fa-github" href="https://github.com/JesusBZ" rel="nofollow" target="_blank"></a>
-</div>
-</div>
-</h5>
+
+
 
 </div>
 <!-- cabecera -->
@@ -1126,7 +996,7 @@ $(document).ready(function () {
 });
 </script>
 <!-- grafico 1 -->
-<script type="application/json" data-for="htmlwidget-bcf0c91e42d003984a26">{"x":{"visdat":{"20c47e9a10ed":["function () ","plotlyVisDat"]},"cur_data":"20c47e9a10ed","attrs":{"20c47e9a10ed":{"x":{},"y":{},"mode":"lines","line":{"width":2,"dash":null,"color":"#00526d"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"type":"date"},"title":"Source: Empresa X Venezuela","showgrid":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"Unidades en miles","showgrid":false},"title":"Ventas en Volumen Empresa X 2014-2019","hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2014,2014.08333333333,2014.16666666667,2014.25,2014.33333333333,2014.41666666667,2014.5,2014.58333333333,2014.66666666667,2014.75,2014.83333333333,2014.91666666667,2015,2015.08333333333,2015.16666666667,2015.25,2015.33333333333,2015.41666666667,2015.5,2015.58333333333,2015.66666666667,2015.75,2015.83333333333,2015.91666666667,2016,2016.08333333333,2016.16666666667,2016.25,2016.33333333333,2016.41666666667,2016.5,2016.58333333333,2016.66666666667,2016.75,2016.83333333333,2016.91666666667,2017,2017.08333333333,2017.16666666667,2017.25,2017.33333333333,2017.41666666667,2017.5,2017.58333333333,2017.66666666667,2017.75,2017.83333333333,2017.91666666667,2018,2018.08333333333,2018.16666666667,2018.25,2018.33333333333,2018.41666666667,2018.5,2018.58333333333,2018.66666666667,2018.75,2018.83333333333,2018.91666666667,2019,2019.08333333333,2019.16666666667,2019.25,2019.33333333333,2019.41666666667,2019.5,2019.58333333333,2019.66666666667,2019.75,2019.83333333333,2019.91666666667],"y":[4890.608,4630.269,5062.862,4776.355,5015.127,5344.647,5871.523,6025.657,5727.814,6618.11,6766.983,7615.062,7200.953,7304.261,7565.799,5979.026,6598.866,6384.815,6363.746,6273.977,6081.654,6117.258,5474.515,5171.898,6274.261,4357,4245,4202,3909,2983,2048.581,2001.76,1802.645,1728.121,2229.007,2453.621,2143.988,1713.266,1952.477,1488.076,1740.102,1901,2138.297,2700.347,2681.793,2940.628,2956.127,2456.058,1746.709,1469.174,1600.28825251926,1606.923,1814.369,1562.299,1522.583,1817.53564285714,1290.665,1600,1646.385,1662,1039.637,734.824,579.366,653.318,829.471,760.448,858,943.8,1038.18,1152.3798,1325.23677,1378.2462408],"mode":"lines","line":{"color":"#00526d","width":2,"dash":[]},"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-bcf0c91e42d003984a26">{"x":{"visdat":{"20c47e9a10ed":["function () ","plotlyVisDat"]},"cur_data":"20c47e9a10ed","attrs":{"20c47e9a10ed":{"x":{},"y":{},"mode":"lines","line":{"width":2,"dash":null,"color":"#00526d"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"type":"date"},"title":"Source: Empresa X ","showgrid":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"Unidades en miles","showgrid":false},"title":"Ventas en Volumen Empresa X 2014-2019","hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[2014,2014.08333333333,2014.16666666667,2014.25,2014.33333333333,2014.41666666667,2014.5,2014.58333333333,2014.66666666667,2014.75,2014.83333333333,2014.91666666667,2015,2015.08333333333,2015.16666666667,2015.25,2015.33333333333,2015.41666666667,2015.5,2015.58333333333,2015.66666666667,2015.75,2015.83333333333,2015.91666666667,2016,2016.08333333333,2016.16666666667,2016.25,2016.33333333333,2016.41666666667,2016.5,2016.58333333333,2016.66666666667,2016.75,2016.83333333333,2016.91666666667,2017,2017.08333333333,2017.16666666667,2017.25,2017.33333333333,2017.41666666667,2017.5,2017.58333333333,2017.66666666667,2017.75,2017.83333333333,2017.91666666667,2018,2018.08333333333,2018.16666666667,2018.25,2018.33333333333,2018.41666666667,2018.5,2018.58333333333,2018.66666666667,2018.75,2018.83333333333,2018.91666666667,2019,2019.08333333333,2019.16666666667,2019.25,2019.33333333333,2019.41666666667,2019.5,2019.58333333333,2019.66666666667,2019.75,2019.83333333333,2019.91666666667],"y":[4890.608,4630.269,5062.862,4776.355,5015.127,5344.647,5871.523,6025.657,5727.814,6618.11,6766.983,7615.062,7200.953,7304.261,7565.799,5979.026,6598.866,6384.815,6363.746,6273.977,6081.654,6117.258,5474.515,5171.898,6274.261,4357,4245,4202,3909,2983,2048.581,2001.76,1802.645,1728.121,2229.007,2453.621,2143.988,1713.266,1952.477,1488.076,1740.102,1901,2138.297,2700.347,2681.793,2940.628,2956.127,2456.058,1746.709,1469.174,1600.28825251926,1606.923,1814.369,1562.299,1522.583,1817.53564285714,1290.665,1600,1646.385,1662,1039.637,734.824,579.366,653.318,829.471,760.448,858,943.8,1038.18,1152.3798,1325.23677,1378.2462408],"mode":"lines","line":{"color":"#00526d","width":2,"dash":[]},"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <!-- grafico 1 -->
 <!-- grafico 2 -->
 <script type="application/json" data-for="htmlwidget-494fc622defbf1143cd9">{"x":{"data":[{"x":[2014,2014.08333333333,2014.16666666667,2014.25,2014.33333333333,2014.41666666667,2014.5,2014.58333333333,2014.66666666667,2014.75,2014.83333333333,2014.91666666667,2015,2015.08333333333,2015.16666666667,2015.25,2015.33333333333,2015.41666666667,2015.5,2015.58333333333,2015.66666666667,2015.75,2015.83333333333,2015.91666666667,2016,2016.08333333333,2016.16666666667,2016.25,2016.33333333333,2016.41666666667,2016.5,2016.58333333333,2016.66666666667,2016.75,2016.83333333333,2016.91666666667,2017,2017.08333333333,2017.16666666667,2017.25,2017.33333333333,2017.41666666667,2017.5,2017.58333333333,2017.66666666667,2017.75,2017.83333333333,2017.91666666667,2018,2018.08333333333,2018.16666666667,2018.25,2018.33333333333,2018.41666666667,2018.5,2018.58333333333,2018.66666666667,2018.75,2018.83333333333,2018.91666666667,2019,2019.08333333333,2019.16666666667,2019.25,2019.33333333333,2019.41666666667,2019.5,2019.58333333333,2019.66666666667,2019.75,2019.83333333333,2019.91666666667],"y":[4890.608,4630.269,5062.862,4776.355,5015.127,5344.647,5871.523,6025.657,5727.814,6618.11,6766.983,7615.062,7200.953,7304.261,7565.799,5979.026,6598.866,6384.815,6363.746,6273.977,6081.654,6117.258,5474.515,5171.898,6274.261,4357,4245,4202,3909,2983,2048.581,2001.76,1802.645,1728.121,2229.007,2453.621,2143.988,1713.266,1952.477,1488.076,1740.102,1901,2138.297,2700.347,2681.793,2940.628,2956.127,2456.058,1746.709,1469.174,1600.28825251926,1606.923,1814.369,1562.299,1522.583,1817.53564285714,1290.665,1600,1646.385,1662,1039.637,734.824,579.366,653.318,829.471,760.448,858,943.8,1038.18,1152.3798,1325.23677,1378.2462408],"mode":"lines","line":{"color":"#00526d","width":2,"dash":[]},"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2014.5,2014.58333333333,2014.66666666667,2014.75,2014.83333333333,2014.91666666667,2015,2015.08333333333,2015.16666666667,2015.25,2015.33333333333,2015.41666666667,2015.5,2015.58333333333,2015.66666666667,2015.75,2015.83333333333,2015.91666666667,2016,2016.08333333333,2016.16666666667,2016.25,2016.33333333333,2016.41666666667,2016.5,2016.58333333333,2016.66666666667,2016.75,2016.83333333333,2016.91666666667,2017,2017.08333333333,2017.16666666667,2017.25,2017.33333333333,2017.41666666667,2017.5,2017.58333333333,2017.66666666667,2017.75,2017.83333333333,2017.91666666667,2018,2018.08333333333,2018.16666666667,2018.25,2018.33333333333,2018.41666666667,2018.5,2018.58333333333,2018.66666666667,2018.75,2018.83333333333,2018.91666666667,2019,2019.08333333333,2019.16666666667,2019.25,2019.33333333333,2019.41666666667],"y":[5791.68245833333,5999.36316666667,6215.06854166667,6369.468875,6485.56929166667,6594.89875,6658.748375,6689.60433333333,6714.69433333333,6708.56883333333,6633.84716666667,6478.19583333333,6337.78516666667,6176.37045833333,5915.20129166667,5702.79191666667,5516.67141666667,5262.851375,4941.31054166667,4583.50295833333,4227.201875,3866.029125,3547.91891666667,3299.427875,3014.071625,2731.82133333333,2526.14395833333,2317.542,2114.09108333333,1978.637,1937.29183333333,1970.13779166667,2035.87675,2123.02904166667,2203.84683333333,2234.24504166667,2217.79329166667,2191.0695,2166.22446885497,2156.50189604327,2164.54831270994,2153.5302293766,2113.76293770994,2051.32438116232,1956.57690794803,1842.75374128137,1732.32165794803,1644.6633246147,1582.11624128137,1522.05699128137,1448.9206474264,1366.64867857143,1285.87772023809,1211.42984523809,1150.32842857143,1086.23181845238,1039.30595833333,1010.13490833333,978.102890416666,952.898640866666],"mode":"lines","line":{"color":"#00526d","width":2,"dash":[]},"type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x2","yaxis":"y2","frame":null},{"x":[2014,2014.08333333333,2014.16666666667,2014.25,2014.33333333333,2014.41666666667,2014.5,2014.58333333333,2014.66666666667,2014.75,2014.83333333333,2014.91666666667,2015,2015.08333333333,2015.16666666667,2015.25,2015.33333333333,2015.41666666667,2015.5,2015.58333333333,2015.66666666667,2015.75,2015.83333333333,2015.91666666667,2016,2016.08333333333,2016.16666666667,2016.25,2016.33333333333,2016.41666666667,2016.5,2016.58333333333,2016.66666666667,2016.75,2016.83333333333,2016.91666666667,2017,2017.08333333333,2017.16666666667,2017.25,2017.33333333333,2017.41666666667,2017.5,2017.58333333333,2017.66666666667,2017.75,2017.83333333333,2017.91666666667,2018,2018.08333333333,2018.16666666667,2018.25,2018.33333333333,2018.41666666667,2018.5,2018.58333333333,2018.66666666667,2018.75,2018.83333333333,2018.91666666667,2019,2019.08333333333,2019.16666666667,2019.25,2019.33333333333,2019.41666666667,2019.5,2019.58333333333,2019.66666666667,2019.75,2019.83333333333,2019.91666666667],"y":[300.897238237337,-180.379195095995,-26.0690529254772,-344.158468429329,-60.7698315126624,-223.497681602663,-219.667695095995,19.7951001421,-157.321520095995,198.308788237338,281.327896570671,411.534421570671,300.897238237337,-180.379195095995,-26.0690529254772,-344.158468429329,-60.7698315126624,-223.497681602663,-219.667695095995,19.7951001421,-157.321520095995,198.308788237338,281.327896570671,411.534421570671,300.897238237337,-180.379195095995,-26.0690529254772,-344.158468429329,-60.7698315126624,-223.497681602663,-219.667695095995,19.7951001421,-157.321520095995,198.308788237338,281.327896570671,411.534421570671,300.897238237337,-180.379195095995,-26.0690529254772,-344.158468429329,-60.7698315126624,-223.497681602663,-219.667695095995,19.7951001421,-157.321520095995,198.308788237338,281.327896570671,411.534421570671,300.897238237337,-180.379195095995,-26.0690529254772,-344.158468429329,-60.7698315126624,-223.497681602663,-219.667695095995,19.7951001421,-157.321520095995,198.308788237338,281.327896570671,411.534421570671,300.897238237337,-180.379195095995,-26.0690529254772,-344.158468429329,-60.7698315126624,-223.497681602663,-219.667695095995,19.7951001421,-157.321520095995,198.308788237338,281.327896570671,411.534421570671],"mode":"lines","line":{"color":"#00526d","width":2,"dash":[]},"type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x3","yaxis":"y3","frame":null},{"x":[2014.5,2014.58333333333,2014.66666666667,2014.75,2014.83333333333,2014.91666666667,2015,2015.08333333333,2015.16666666667,2015.25,2015.33333333333,2015.41666666667,2015.5,2015.58333333333,2015.66666666667,2015.75,2015.83333333333,2015.91666666667,2016,2016.08333333333,2016.16666666667,2016.25,2016.33333333333,2016.41666666667,2016.5,2016.58333333333,2016.66666666667,2016.75,2016.83333333333,2016.91666666667,2017,2017.08333333333,2017.16666666667,2017.25,2017.33333333333,2017.41666666667,2017.5,2017.58333333333,2017.66666666667,2017.75,2017.83333333333,2017.91666666667,2018,2018.08333333333,2018.16666666667,2018.25,2018.33333333333,2018.41666666667,2018.5,2018.58333333333,2018.66666666667,2018.75,2018.83333333333,2018.91666666667,2019,2019.08333333333,2019.16666666667,2019.25,2019.33333333333,2019.41666666667],"y":[299.508236762664,6.49873319123435,-329.93302157067,50.3323367626635,0.0858117626621606,608.62882842933,241.307386762664,795.035861762663,877.173719592144,-385.384364904005,25.7886648459962,130.116848269329,245.628528429327,77.8114415245673,323.774228429331,216.157295095995,-323.484313237338,-502.487796570671,1032.053220096,-46.1237632373368,43.8671779254773,680.129343429328,421.850914845996,-92.9301933973375,-745.822929904004,-749.856433475433,-566.177438237338,-787.729788237338,-166.411979904004,63.449578429329,-94.2010715706708,-76.4925965706716,-57.3306970745227,-290.794573237338,-402.975001820671,-109.747360064004,140.171403429329,489.4823998579,672.890051241026,585.817315719391,510.250790719391,-109.006650947276,-667.951175947275,-401.771186066324,-330.219602503298,108.327727147962,142.817173564628,141.133356987962,160.134453814631,275.683551433677,-0.934127330402816,35.0425331912338,79.1793831912332,39.0357331912339,-411.588666808769,-171.028623356385,-433.870905407856,-12.658439904004,-87.8620589040038,31.0470407359961],"mode":"lines","line":{"color":"#00526d","width":2,"dash":[]},"type":"scatter","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x4","yaxis":"y4","frame":null}],"layout":{"xaxis":{"domain":[0,1],"automargin":true,"showgrid":false,"range":[2014,2019.91666666667],"showline":true,"showticklabels":false,"anchor":"y"},"xaxis2":{"domain":[0,1],"automargin":true,"showgrid":false,"range":[2014,2019.91666666667],"showline":true,"showticklabels":false,"anchor":"y2"},"xaxis3":{"domain":[0,1],"automargin":true,"showgrid":false,"range":[2014,2019.91666666667],"showline":true,"showticklabels":false,"anchor":"y3"},"xaxis4":{"domain":[0,1],"automargin":true,"showgrid":false,"range":[2014,2019.91666666667],"showline":true,"anchor":"y4"},"yaxis4":{"domain":[0,0.23],"automargin":true,"title":"Random","showgrid":false,"anchor":"x4"},"yaxis3":{"domain":[0.27,0.48],"automargin":true,"title":"Seasonal","showgrid":false,"anchor":"x3"},"yaxis2":{"domain":[0.52,0.73],"automargin":true,"title":"Trend","showgrid":false,"anchor":"x2"},"yaxis":{"domain":[0.77,1],"automargin":true,"title":"Observed","showgrid":false,"anchor":"x"},"annotations":[],"shapes":[],"images":[],"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Decomposition of additive time series - Vol","hovermode":"closest","showlegend":false},"attrs":{"20c465178f1":{"x":{},"y":{},"mode":"lines","line":{"width":2,"dash":null,"color":"#00526d"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"20c45dfd2771":{"x":{},"y":{},"mode":"lines","line":{"width":2,"dash":null,"color":"#00526d"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"20c473132b7":{"x":{},"y":{},"mode":"lines","line":{"width":2,"dash":null,"color":"#00526d"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"20c4124f67f7":{"x":{},"y":{},"mode":"lines","line":{"width":2,"dash":null,"color":"#00526d"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"source":"A","config":{"showSendToCloud":false},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"subplot":true,".hideLegend":true,"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
