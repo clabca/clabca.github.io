@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<title>Power BI</title>
+<meta name="description" content="Power BI es una herramienta de inteligencia empresarial y visualización de datos que le ayuda a convertir datos de varias fuentes de datos en paneles interactivos e informes de BI. Proporciona múltiples conectores y servicios de software."/>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title"  content= "Power BI"/>
+<meta property="og:image" content= "https://clabca.github.io/imagenes/miniatura/power-bi.png"/>
+<meta property="og:description"  content="Herramientas de BI."/>
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://clabca.github.io/power-bi.html"/>
+<meta name="twitter:card" content="summary_large_image" /> 
+
+
+
+
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link  rel="icon"   href="favi.png" type="image/png" />
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+.w3l-footer-22-main #movetop {
+  position: fixed;
+  bottom: 12px;
+  right: 15px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  background: #67bdff;
+  padding: 0;
+  line-height: 38px;
+  transition: 0.5s ease-out;
+  border-radius: 50%;
+}
+
+.w3l-footer-22-main #movetop:hover {
+  background: #213e54;
+}
+#share {
+	width: 100%;
+  	margin: 100px auto;
+  	text-align: center;
+}
+
+/* buttons */
+
+#share a {
+	width: 50px;
+  	height: 50px;
+  	display: inline-block;
+  	margin: 8px;
+  	border-radius: 50%;
+  	font-size: 24px;
+  	color: #fff;
+	opacity: 0.75;
+	transition: opacity 0.15s linear;
+}
+
+#share a:hover {
+	opacity: 1;
+}
+
+/* icons */
+
+#share i {
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+/* colors */
+
+.facebook {
+ 	background: #3b5998;
+}
+
+.twitter {
+  	background: #55acee;
+}
+
+.googleplus {
+  	background: #000000;
+}
+
+.linkedin {
+  	background: #0077b5;
+}
+
+.pinterest {
+  	background: #cb2027;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+.btn-3d {
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+  border-radius: 4px;
+  background-color: #d9750b;
+  color: #fff;
+
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+    0 1px 3px rgba(0,0,0,.2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+  background-image: linear-gradient(#f90 10%,#e76a00 100%);
+}
+
+.btn-3d:hover, .btn-3d:focus {
+  background-color: #e0811b;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
+.btn-3d:active {
+  background-color: #cf6a00;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC4HGWB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="container-fluid main-container">
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Portafolio</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Inicio
+  </a>
+</li>
+
+
+
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+<h3 style="clear: both; text-align: center;">
+</h3>
+<div style="text-align: justify;">
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<h2 style="box-sizing: border-box; clear: both; line-height: 1.2; margin-bottom: 10px; margin-top: 20px; text-align: center;">
+<span style="font-size: x-large;">Power BI herramienta para la visualización de datos desde cualquier lugar</span></h2>
+<div>
+<span style="font-size: x-large;"></span></div>
+<h2 style="box-sizing: border-box; clear: both; line-height: 1.2; margin-bottom: 10px; margin-top: 20px; text-align: center;">
+<a href="https://1.bp.blogspot.com/-fv0sWnlFd4Q/Xywvi2S4xqI/AAAAAAAACZQ/TVwarZN9FUQVRvjEb7aULxsU5TE_pYMgQCPcBGAYYCw/s1600/power-bi-dashboard.webp" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="720" data-original-width="1280" src="https://1.bp.blogspot.com/-fv0sWnlFd4Q/Xywvi2S4xqI/AAAAAAAACZQ/TVwarZN9FUQVRvjEb7aULxsU5TE_pYMgQCPcBGAYYCw/s1600/power-bi-dashboard.webp" /></a></h2>
+<h2 style="text-align: center;">
+</h2>
+</div>
+<div style="text-align: justify;"><br>
+<span style="font-size: large;">Para conocer a una de las mejores herramientas de inteligencia de empresarial comenzaremos con un breve concepto de <b>"Inteligencia de Negocios" (Business Intelligence), </b>el más general sacado de&nbsp;</span><span style="font-size: large; text-align: justify;">Google, Wikipedia:</span><span style="font-size: large; text-align: justify;">&nbsp;</span><br />
+<span style="font-size: large; text-align: justify;"><br /></span></div>
+<blockquote class="tr_bq" style="text-align: justify;">
+<span style="font-size: large;"><i>"Business Intelligence (BI) es un conjunto de teorías, metodologías, procesos, arquitecturas y tecnologías que transforman los datos sin procesar en información significativa y útil para fines comerciales. BI puede manejar grandes cantidades de información para ayudar a identificar y desarrollar nuevas oportunidades. Hacer uso de nuevas oportunidades e implementar una estrategia efectiva puede proporcionar una ventaja competitiva en el mercado y una estabilidad a largo plazo ".</i></span></blockquote>
+
+<h3 style="text-align: justify;">
+<span style="font-size: large;">¿Qué es un software de Business Intelligence?</span>&nbsp;</h3>
+<div style="text-align: justify;"><br>
+<span style="font-size: large;">El software Business Intelligence (software BI) es una forma de software que ayuda a todo tipo de empresas a medir y mejorar la productividad.</span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;">El tamaño de la empresa no determina el uso de un software de Business Intelligence, erróneamente&nbsp;se cree que estas metodologías solo aplican para empresas que manejan altos volúmenes de transacciones, olvidando que los procesos de una empresa pequeña pueden estar relacionados con grandes cantidades de datos exógenos. El BI permite utilizar&nbsp; y "medir" esas relaciones.&nbsp;</span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;">El software de BI trabaja para extraer datos, analizarlos, formar informes y calcular la productividad. En las grandes empresas, los datos producidos por el software de BI pueden presentarse a quienes son responsables o tienen intereses creados en los márgenes de beneficio, como los miembros de la junta empresarial, los inversores comerciales, los CEO, los gerentes de ventas y los administradores ejecutivos.</span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<div>
+<span style="font-size: large;">El software de BI también se conoce como un sistema de soporte de decisiones.</span><br />
+<span style="font-size: large;"></span>
+
+<h3 style="text-align: justify;">
+<span style="font-size: large;">¿Realmente necesita herramientas de BI?</span></h3>
+<div style="text-align: justify;"><br>
+<a href="https://1.bp.blogspot.com/-lk4Po_bTYDI/Xyw01-7vSjI/AAAAAAAACZY/jDNd6EsKC9kTgjwOrK1BSHwzOf18B1xQwCLcBGAsYHQ/s1600/BI.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="720" data-original-width="1280" height="225" src="https://1.bp.blogspot.com/-lk4Po_bTYDI/Xyw01-7vSjI/AAAAAAAACZY/jDNd6EsKC9kTgjwOrK1BSHwzOf18B1xQwCLcBGAsYHQ/s400/BI.gif" width="400" /></a><span style="font-size: large;">A veces, se ha preguntado: ¿Es necesario un sistema de BI en mi empresa? o ¿Cómo pueden ayudarme las herramientas de BI a tomar decisiones beneficiosas para mi organización?.</span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+<span style="font-size: large;">Si se utiliza una capacitación efectiva en Business Intelligence en cualquier organización, puede mejorar sus procesos de toma de decisiones e incluso procesos como la gestión estratégica táctica.</span></div>
+<h3 style="text-align: justify;"><br>
+<span style="font-size: large;">Efectos inmediatos con el uso de herramientas BI:</span></h3>
+<span style="font-size: large;"></span><br />
+<div style="text-align: justify;">
+<span style="font-size: large;"><b>Elimina conjeturas:</b> Con la ayuda del software Business Intelligence, uno puede tener datos precisos, actualizaciones en tiempo real y medios para pronosticar e incluso predecir condiciones como 'qué sucederá si'. Por lo tanto, la necesidad de adivinar se ha ido.</span></div>
+<span style="font-size: large;">
+</span>
+
+
+<div>
+<div style="text-align: justify;">
+
+
+<span style="font-size: large;">
+</span><br />
+<h3>
+<span style="font-size: large;">¿Qué es Power BI?</span></h3>
+<div style="text-align: justify;">
+<span style="font-size: large;">Power BI es una herramienta de inteligencia empresarial y visualización de datos que le ayuda a convertir datos de varias fuentes de datos en paneles interactivos e informes de BI. Proporciona múltiples conectores y servicios de software.</span></div>
+
+<h3>
+<span style="font-size: large;">¿Cómo es el servicio?</span></h3>
+<div style="text-align: justify;">
+<span style="font-size: large;">Es un servicio seguro en la nube alojado por Microsoft que permite a los usuarios ver paneles, informes y aplicaciones Power BI, un tipo de contenido que combina paneles e informes relacionados, utilizando un navegador web o mediante aplicaciones móviles para Windows, iOS y Android.</span></div>
+<h3 style="text-align: justify;">
+<span style="font-size: large;">¿Existe una versión Gratuita?</span></h3>
+<div style="text-align: justify;">
+<span style="font-size: large;">Power BI Desktop es una herramienta gratuita de análisis de datos de autoservicio y creación de informes que se instala en una computadora con Windows. Se puede conectar a más de 70 fuentes de datos locales y en la nube para convertir la información en imágenes interactivas. Los científicos y desarrolladores de datos trabajan con Power BI Desktop para producir informes y ponerlos a disposición del servicio Power BI.</span></div>
+<h3 style="text-align: justify;">
+<span style="font-size: large;">¿Y las versiones pagas?</span></h3>
+<div style="text-align: justify;">
+<span style="font-size: large;">Power BI Pro es un software basado en la nube que viene con una tarifa mensual de $ 10 por usuario. La mayor diferencia entre Power BI Desktop y Power BI Pro es la capacidad de colaborar con otros usuarios de Power BI y distribuir informes y visualizaciones a otros suscriptores de Power BI en toda la organización.</span></div>
+<span style="font-size: large;"></span>
+<h3 style="text-align: justify;">
+<span style="font-size: large;">
+<span style="font-size: large;">Power BI Premium</span></span></h3>
+<span style="font-size: large;">
+<div style="text-align: justify;">
+<span style="font-size: large;">A diferencia de Power BI Desktop y Pro, Power BI Premium no es una aplicación. Premium le da a la organización espacio y capacidad en una nube alojada por Microsoft para compartir informes. Una organización puede elegir cómo aplicar su capacidad dedicada asignándola en función del número de usuarios, las necesidades de carga de trabajo u otros factores, y ampliar o reducir según sea necesario</span>.</div>
+<h3 style="text-align: justify;">
+<span style="font-size: large;">¿Porqué usar Power BI?</span></h3>
+</span><br>
+<div style="text-align: justify;">
+<ol>
+<li><span style="font-size: large;">Cuadros de mando e informes preconstruidos para soluciones SaaS</span></li>
+<li><span style="font-size: large;">Permite actualizaciones en el tablero en tiempo real.</span></li>
+<li><span style="font-size: large;">Ofrece una conexión segura y confiable a sus fuentes de datos en la nube o en las instalaciones.</span></li>
+<li><span style="font-size: large;">Implementación rápida, configuración híbrida y entorno seguro.</span></li>
+<li><span style="font-size: large;">Permite la exploración de datos mediante consultas en lenguaje natural.</span></li>
+<li><span style="font-size: large;">Brinda una función para la visualización del tablero actualizada regularmente con la comunidad Power BI.</span></li>
+</ol>
+<div>
+<br>
+<span style="font-size: large;">En los siguiente botones naranja puedes dirigirte e interactuar con dos cuadros de mando financiero (con data real) en Power BI, para compartir dicho informe solo se debe enviar el link y cualquier persona <b>desde cualquier lugar</b>, podrá visualizar la información en un navegador:&nbsp;</span></div>
+</div>
+</div>
+<span style="font-size: large;">
+</span></div>
+
+<br>
+<br>
+<div style="text-align: center;">
+<a role="button" id="btn5" class="btn btn-3d" type="button" href="https://app.powerbi.com/view?r=eyJrIjoiMTQ0YTFlYzEtOGVmZC00Mzc0LWI1MDQtYWQ3ODBlMTVhZmMxIiwidCI6IjYwMDg1ZTYzLWUyOGUtNDVhNS05YmIwLTQ0YjAwZjNjMWY4NyJ9" target="_blank">Ir al Dashboard Power BI Reporte 1</a>
+</div>
+<br>
+<br>
+<div style="text-align: center;">
+<a role="button" id="btn5" class="btn btn-3d" type="button" href="https://app.powerbi.com/view?r=eyJrIjoiZDNkOWRjMTItOWQ1NS00ZjgzLTk3OWEtMGUyMGM5OTY3MWFlIiwidCI6IjYwMDg1ZTYzLWUyOGUtNDVhNS05YmIwLTQ0YjAwZjNjMWY4NyJ9&pageName=ReportSectionc83febf3c09f5fc93b73" target="_blank">Ir al Dashboard Power BI Reporte 2</a>
+</div>
+<br>
+<br>
+<section class="w3l-footer-22-main">
+<button onclick="topFunction()" id="movetop" title="Ir a Inicio">
+<span class="fa fa-arrow-up"></span>
+</button>
+</section>
+<hr>
+
+
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://portafolio-11.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+<script>
+document.getElementById("btn3").onclick = botonActivado;
+function botonActivado() {
+  saludar(this);
+}
+
+function saludar(elemento) {
+  console.log("Buenos días, " + elemento.textContent);
+}
+
+function enlaceActivadoRaton(e) {
+  // Impide que el <a> haga aparecer la # en la barra de direcciones
+  e.preventDefault();
+
+  saludar(this);
+}
+
+function enlaceActivadoTecla(e) {
+  // La barra espaciadora debe activar el botón implementado con un <a>
+  if (e.key === " " || e.key === "Spacebar") {
+    // Impide que se intente navegar a #0
+    e.preventDefault();
+
+    saludar(this);
+  }
+}
+
+
+
+Resources
+</script>
+<!-- code folding -->
+<!-- move top -->
+ <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+    
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->  
+<script id="dsq-count-scr" src="//portafolio-11.disqus.com/count.js" async></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169665920-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169665920-1');
+gtag('set', {'user_id': 'USER_ID'}); 
+ga('set', 'userId', 'USER_ID');    
+</script> 
+				
+</body>
+</html>
