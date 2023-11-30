@@ -1,0 +1,12 @@
+6 clases + 1 ayudantia (+capstone)
+
+Clase 1: UL01 - UL02
+Clase 2: UL02 - UL03
+Clase 3: UL04 - UL05
+Clase 4: UL05 - UL08(Capstone)
+Clase 5: UL06 - UL07
+Clase 6: UL07 - UL08
+
+Opcionales: UL09 - UL10
+
+Revisar Capstone
