@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajes Chile</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome 5.15.4 -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap 5.1.3 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="author" content="Cristian Labra Castro" />
+    <meta name="description" content="Prueba" />
+    <meta name="keywords" content="maqueta, viajes, chile" />
+  </head>
+
+  <body>
+    <!-- Componente Bootstrap 1: Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container px-4 px-md-0">
+        <a href="#"
+          ><img src="assets/img/viajes.svg" alt="Viajes Chile Logo"
+        /></a>
+        <a class="navbar-brand me-auto" href="#">Viajes Chile</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="#nosotros">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Componente JS 1: Carrusel -->
+
+    <header id="inicio" class="mb-5 mb-lg-0">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="Alpacas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/carousel2.jpg"
+              class="d-block w-100"
+              alt="Moais"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/carousel3.jpg"
+              class="d-block w-100"
+              alt="Pingüino"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="px-4 px-md-0">
+      <section
+        id="nosotros"
+        class="container d-none d-md-block mt-n5 mt-lg-0 mb-5"
+      >
+        <div class="subtitle text-center mt-3">
+          <i class="far fa-compass me-2"></i>
+          <h2 class="d-inline-block">¿Quiénes somos?</h2>
+        </div>
+        <hr />
+        <div class="bio row row-cols-3 mt-4">
+          <div class="col">
+            <p class="bg-info text-center">
+              <i class="fas fa-plane py-2"></i>
+            </p>
+            <p>
+              En Viajes Chile, nos apasiona conectar a los viajeros con las
+              maravillas naturales y culturales de este vibrante país. Con más
+              de 15 años de experiencia en la industria del turismo, nos
+              enorgullece ofrecer experiencias auténticas y memorables que
+              capturan la esencia única de Chile. Desde la majestuosidad de la
+              Patagonia hasta la energía cosmopolita de Santiago, cada uno de
+              nuestros viajes está diseñado para sumergir a nuestros clientes en
+              la diversidad y la belleza de Chile.
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Nuestra misión en Viajes Chile es ir más allá de lo convencional
+              para brindar experiencias de viaje excepcionales que inspiren,
+              eduquen y deleiten a nuestros clientes. Nos esforzamos por ser
+              líderes en la industria del turismo sostenible, colaborando
+              estrechamente con comunidades locales para garantizar un impacto
+              positivo en el medio ambiente y en las personas que encontramos en
+              nuestro camino. Creemos que cada viaje es una oportunidad para
+              descubrir, aprender y crecer, y estamos comprometidos a hacer que
+              cada experiencia con Viajes Chile sea inolvidable.
+            </p>
+            <p class="bg-info text-center">
+              <i class="fas fa-mountain py-2"></i>
+            </p>
+          </div>
+          <div class="col">
+            <p class="bg-info text-center">
+              <i class="fas fa-route py-2"></i>
+            </p>
+            <p>
+              En el corazón de Viajes Chile se encuentra nuestro equipo dedicado
+              y apasionado. Desde nuestros expertos en destinos hasta nuestros
+              guías turísticos locales, cada miembro de nuestro equipo está
+              comprometido con la excelencia en el servicio al cliente y con
+              hacer que cada viaje sea único y emocionante. Nos enorgullecemos
+              de nuestra atención al detalle y de nuestra capacidad para
+              adaptarnos a las necesidades y deseos de nuestros clientes,
+              creando así experiencias personalizadas que superan todas las
+              expectativas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Componenete Bootstrap 2: Tarjetas -->
+
+      <section id="destacados" class="container mb-5">
+        <div class="subtitle text-center mt-3">
+          <i class="far fa-map me-2"></i>
+          <h2 class="d-inline-block">Destacados</h2>
+        </div>
+        <hr class="mb-4" />
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <!-- Componente JS 3: Tooltips en las fotos -->
+
+              <img
+                src="assets/img/card1.jpg"
+                class="card-img-top"
+                alt="Torres del Paine"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Foto de las Torres del Paine"
+              />
+              <div class="card-body">
+                <!-- Componente Bootstrap 3: Badge -->
+
+                <h5 class="card-title">
+                  Torres del Paine
+                  <span class="badge bg-info">Nuevo destino</span>
+                </h5>
+                <p class="card-text">
+                  Torres del Paine, una joya de la Patagonia chilena, ofrece
+                  paisajes de ensueño con picos imponentes, lagos turquesa y
+                  glaciares majestuosos. Este parque nacional es un paraíso para
+                  los amantes del trekking y la naturaleza, con rutas que llevan
+                  a vistas panorámicas inolvidables y una biodiversidad única.
+                </p>
+                <!-- Componente Bootstrap 4: Button -->
+
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-info">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/card2.jpg"
+                class="card-img-top"
+                alt="Laguna Lejía"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Foto de la Laguna Lejía"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Laguna de Leguía</h5>
+                <p class="card-text">
+                  La Laguna de Leguía, ubicada en la región de Arica y
+                  Parinacota en Chile, es un oasis de tranquilidad y belleza
+                  natural. Rodeada de altiplanicies desérticas, esta laguna de
+                  aguas azules ofrece un paisaje cautivador y es hogar de una
+                  variada fauna, incluyendo aves migratorias. Un destino
+                  perfecto para la observación de aves y la desconexión en medio
+                  de la naturaleza.
+                </p>
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-info">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/card3.jpg"
+                class="card-img-top"
+                alt="Laguna Chaxa"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Foto de la Laguna Chaxa"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Laguna Chaxa</h5>
+                <p class="card-text">
+                  La Laguna Chaxa, situada en el corazón del Salar de Atacama en
+                  Chile, es un espectáculo surrealista de sal blanca que
+                  contrasta con el azul intenso del cielo. Hogar de flamencos
+                  andinos y otras aves migratorias, este santuario natural
+                  ofrece vistas impresionantes y oportunidades únicas para la
+                  fotografía de paisajes deslumbrantes y vida silvestre exótica.
+                </p>
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-info">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/card4.jpg"
+                class="card-img-top"
+                alt="Bosque"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Foto de un bosque"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bosque Encantado</h5>
+                <p class="card-text">
+                  El Bosque Encantado de Fray Jorge, en la región de Coquimbo,
+                  Chile, es un tesoro natural único. Esta reserva de bosque
+                  subtropical, rodeada de desiertos áridos, alberga una
+                  diversidad sorprendente de flora y fauna. Sus senderos
+                  serpenteantes invitan a explorar un ecosistema mágico donde
+                  los árboles cubiertos de musgo y helechos crean un ambiente de
+                  cuento de hadas. Un destino ideal para los amantes de la
+                  naturaleza y la aventura.
+                </p>
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-info">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario Typeform funcional -->
+
+      <section id="contacto" class="container mb-5">
+        <div class="subtitle text-center mt-3">
+          <i class="far fa-comment me-2"></i>
+          <h2 class="d-inline-block">Contacto</h2>
+        </div>
+
+        <div
+          class="typeform mt-4"
+          data-tf-widget="X52bK711"
+          data-tf-hide-headers
+          data-tf-iframe-props="title=Viajes Chile"
+        ></div>
+      </section>
+    </main>
+
+    <footer class="bg-info py-4">
+      <div class="container px-5">
+        <div class="row row-cols-1 row-cols-md-2 text-center">
+          <h2 class="logo col my-auto">Viajes Chile</h2>
+          <div class="col my-auto">
+            <a href="#"><i class="fab fa-github-square mx-1 mx-md-2"></i></a>
+            <a href="#"><i class="fab fa-linkedin mx-1 mx-md-2"></i></a>
+            <a href="#"><i class="fab fa-twitter-square mx-1 mx-md-2"></i></a>
+            <a href="#"><i class="fab fa-facebook-square mx-1 mx-md-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS 5.1.3 -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Typeform JS -->
+
+    <script src="//embed.typeform.com/next/embed.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
