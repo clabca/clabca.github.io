@@ -1,0 +1,4 @@
+Vina del mar:max 26   min 9
+Valparaiso:max 24   min 10
+Quilpue:max 30   min 7
+Quintero:max 22   min 4
