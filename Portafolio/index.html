@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<title>Inicio</title>
-<meta name="description" content="Códigos en Python, pruebas de paqueterías de Python, tratamiento y modelaje de datos; training en Business Intelligence, Portafolios, Big Data, Machine Learning, Neural Network, Time Series, Forecast,Dashboard Financiero y Evaluación de Proyectos."/>
-<meta name="keywords" content="business intelligence, finanzas, presupuesto, control">
-<meta name="author" content="clabca.github.io">    
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title"  content= "Portafolio Profesional"/>
-<meta property="og:image" content= "principal.jpg"/>
-<meta property="og:description"  content="Códigos y Técnicas de Finanzas Avanzadas."/>
-<meta property="og:type" content="article" />
-<meta property="og:url" content="Portafolio/index.html"/>
-<meta property="og:author" content="Cristian Labra Castro"/>
-<meta name="twitter:card" content="summary_large_image" /> 
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-<link  rel="icon"   href="favi.png" type="image/png" />
-<!-- Google Tag Manager 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>Inicio</title>
+    <meta
+      name="description"
+      content="Códigos en Python, pruebas de paqueterías de Python, tratamiento y modelaje de datos; training en Business Intelligence, Portafolios, Big Data, Machine Learning, Neural Network, Time Series, Forecast,Dashboard Financiero y Evaluación de Proyectos."
+    />
+    <meta
+      name="keywords"
+      content="business intelligence, finanzas, presupuesto, control"
+    />
+    <meta name="author" content="clabca.github.io" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Portafolio Profesional" />
+    <meta property="og:image" content="principal.jpg" />
+    <meta
+      property="og:description"
+      content="Códigos y Técnicas de Finanzas Avanzadas."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="Portafolio/index.html" />
+    <meta property="og:author" content="Cristian Labra Castro" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="site_libs/bootstrap-3.3.5/css/cerulean.min.css"
+      rel="stylesheet"
+    />
+    <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link
+      href="site_libs/font-awesome-5.1.0/css/v4-shims.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favi.png" type="image/png" />
+    <!-- Google Tag Manager 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -31,832 +44,914 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NC4HGWB');</script>
  End Google Tag Manager -->
 
+    <style type="text/css">
+      h1 {
+        font-size: 34px;
+      }
+      h1.title {
+        font-size: 38px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      h5 {
+        font-size: 16px;
+      }
+      h6 {
+        font-size: 12px;
+      }
+      .table th:not([align]) {
+        text-align: left;
+      }
+    </style>
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
+    <style type="text/css">
+      .main-container {
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      code {
+        color: inherit;
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+      img {
+        max-width: 100%;
+      }
+      .tabbed-pane {
+        padding-top: 12px;
+      }
+      .html-widget {
+        margin-bottom: 20px;
+      }
+      button.code-folding-btn:focus {
+        outline: none;
+      }
+      summary {
+        display: list-item;
+      }
+    </style>
 
+    <style type="text/css">
+      /* padding for bootstrap navbar */
+      body {
+        padding-top: 51px;
+        padding-bottom: 40px;
+      }
+      /* offset scroll position for anchor links (for fixed navbar)  */
+      .section h1 {
+        padding-top: 56px;
+        margin-top: -56px;
+      }
+      .section h2 {
+        padding-top: 56px;
+        margin-top: -56px;
+      }
+      .section h3 {
+        padding-top: 56px;
+        margin-top: -56px;
+      }
+      .section h4 {
+        padding-top: 56px;
+        margin-top: -56px;
+      }
+      .section h5 {
+        padding-top: 56px;
+        margin-top: -56px;
+      }
+      .section h6 {
+        padding-top: 56px;
+        margin-top: -56px;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        border-radius: 0 6px 6px 6px;
+      }
+      .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+      }
+      .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #cccccc;
+        margin-top: 5px;
+        margin-right: -10px;
+      }
+      .dropdown-submenu:hover > a:after {
+        border-left-color: #ffffff;
+      }
+      .dropdown-submenu.pull-left {
+        float: none;
+      }
+      .dropdown-submenu.pull-left > .dropdown-menu {
+        left: -100%;
+        margin-left: 10px;
+        border-radius: 6px 0 6px 6px;
+      }
+    </style>
 
+    <!-- tabsets -->
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-</style>
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+        display: inline-table;
+        max-height: 500px;
+        min-height: 44px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
 
+      .tabset-dropdown > .nav-tabs > li.active:before {
+        content: "î";
+        font-family: "Glyphicons Halflings";
+        display: inline-block;
+        padding: 10px;
+        border-right: 1px solid #ddd;
+      }
 
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+        content: "&#xe258;";
+        border: none;
+      }
 
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+        content: "î";
+        font-family: "Glyphicons Halflings";
+        display: inline-block;
+        padding: 10px;
+        border-right: 1px solid #ddd;
+      }
 
+      .tabset-dropdown > .nav-tabs > li.active {
+        display: block;
+      }
 
-<!-- tabsets -->
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+        border: none;
+        display: inline-block;
+        border-radius: 4px;
+        background-color: transparent;
+      }
 
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+        display: block;
+        float: none;
+      }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "î";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
+      .tabset-dropdown > .nav-tabs > li {
+        display: none;
+      }
+      .widget_blog_subscription {
+        display: block;
+        margin: 50px auto;
+        width: 60%;
+        max-width: 490px;
+        min-width: 320px;
+        position: relative;
+        overflow: hidden;
+        background-color: #f6f6f2;
+      }
+      .widget_blog_subscription p {
+        margin: 0;
+        text-align: center;
+      }
+      .widget_blog_subscription p:first-child {
+        margin: 40px 15px 0;
+        color: #f38630;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 15px;
+        font-family: "PT Sans Narrow", sans-serif;
+        letter-spacing: 1px;
+      }
+      .widget_blog_subscription input[type="text"] {
+        margin: 45px 30px;
+        color: #999;
+        padding: 25px 15px !important;
+        text-align: center;
+        width: 100% !important;
+        max-width: calc(100% - 90px);
+        outline: none;
+        border: 0;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+      .widget_blog_subscription input[type="text"]::-webkit-input-placeholder {
+        color: #69d2e7;
+      }
+      .widget_blog_subscription input[type="text"]:-moz-placeholder {
+        color: #69d2e7;
+      }
+      .widget_blog_subscription input[type="text"]::-moz-placeholder {
+        color: #69d2e7;
+      }
+      .widget_blog_subscription input[type="text"]:-ms-input-placeholder {
+        color: #69d2e7;
+      }
+      .widget_blog_subscription input[type="submit"] {
+        margin: 0;
+        background-color: #1f8ab1;
+        color: #fff;
+        padding: 25px 15px !important;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        outline: none;
+        border: 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-transition: 0.1s all ease-in-out;
+        -moz-transition: 0.1s all ease-in-out;
+        -o-transition: 0.1s all ease-in-out;
+        transition: 0.1s all ease-in-out;
+      }
+      .widget_blog_subscription input[type="submit"]:hover {
+        background-color: #f38630;
+      }
+      .logos {
+        filter: url("data:image/svg xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10 */
+        filter: gray; /*IE6-9*/
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
+        width: 100%;
+        height: 100%;
+      }
+      .logos:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+      }
+      .w3l-footer-22-main #movetop {
+        position: fixed;
+        bottom: 12px;
+        right: 15px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        background: #67bdff;
+        padding: 0;
+        line-height: 38px;
+        transition: 0.5s ease-out;
+        border-radius: 50%;
+      }
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "î";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
+      .w3l-footer-22-main #movetop:hover {
+        background: #213e54;
+      }
 
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
+      blockquote {
+        background: white url(comillas.gif) no-repeat scroll 10px 10px;
+        padding: 25px 0 25px 70px;
+      }
+      blockquote p {
+        font-size: 25px;
+        color: #333;
+      }
+      blockquote p cite {
+        color: #666;
+        font-size: 20px;
+        display: block;
+        text-align: right;
+      }
 
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
+      .blog-card {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+        box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5%;
+        background: #d1d1d1;
+        line-height: 1.4;
+        font-family: sans-serif;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 0;
+      }
+      .blog-card a {
+        color: inherit;
+      }
+      .blog-card a:hover {
+        color: #246da4;
+      }
+      .blog-card:hover .photo {
+        transform: scale(1.3) rotate(3deg);
+      }
+      .blog-card .meta {
+        position: relative;
+        z-index: 0;
+        height: 200px;
+      }
+      .blog-card .photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.2s;
+      }
+      .blog-card .details,
+      .blog-card .details ul {
+        margin: auto;
+        padding: 0;
+        list-style: none;
+      }
+      .blog-card .details {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        margin: auto;
+        transition: left 0.2s;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        font-size: 0.9rem;
+      }
+      .blog-card .details a {
+        text-decoration: dotted underline;
+      }
+      .blog-card .details ul li {
+        display: inline-block;
+      }
+      .blog-card .details .author:before {
+        font-family: FontAwesome;
+        margin-right: 10px;
+        content: "\f007";
+      }
+      .blog-card .details .date:before {
+        font-family: FontAwesome;
+        margin-right: 10px;
+        content: "\f133";
+      }
+      .blog-card .details .tags ul:before {
+        font-family: FontAwesome;
+        content: "\f02b";
+        margin-right: 10px;
+      }
+      .blog-card .details .tags li {
+        margin-right: 2px;
+      }
+      .blog-card .details .tags li:first-child {
+        margin-left: -4px;
+      }
+      .blog-card .description {
+        padding: 1rem;
+        background: #fff;
+        position: relative;
+        z-index: 1;
+      }
+      .blog-card .description h1,
+      .blog-card .description h2 {
+        font-family: Poppins, sans-serif;
+      }
+      .blog-card .description h1 {
+        line-height: 1;
+        margin: 0;
+        font-size: 2rem;
+      }
+      .blog-card .description h2 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #a2a2a2;
+        margin-top: 5px;
+      }
+      .blog-card .description .read-more {
+        text-align: right;
+      }
+      .blog-card .description .read-more a {
+        color: #246da4;
+        display: inline-block;
+        position: relative;
+      }
+      .blog-card .description .read-more a:after {
+        content: "\f061";
+        font-family: FontAwesome;
+        margin-left: -10px;
+        opacity: 0;
+        vertical-align: middle;
+        transition: margin 0.3s, opacity 0.3s;
+      }
+      .blog-card .description .read-more a:hover:after {
+        margin-left: 5px;
+        opacity: 1;
+      }
+      .blog-card p {
+        position: relative;
+        margin: 1rem 0 0;
+        font-size: 16px;
+        text-align: justify;
+      }
+      .blog-card p:first-of-type {
+        margin-top: 1.25rem;
+      }
+      .blog-card p:first-of-type:before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background: #246da4;
+        width: 35px;
+        top: -0.75rem;
+        border-radius: 3px;
+      }
+      .blog-card:hover .details {
+        left: 0%;
+      }
+      @media (min-width: 640px) {
+        .blog-card {
+          flex-direction: row;
+          max-width: auto;
+        }
+        .blog-card .meta {
+          flex-basis: 40%;
+          height: auto;
+        }
+        .blog-card .description {
+          flex-basis: 60%;
+        }
+        .blog-card .description:before {
+          transform: skewX(-3deg);
+          content: "";
+          background: #fff;
+          width: 30px;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+        }
+        .blog-card.alt {
+          flex-direction: row-reverse;
+        }
+        .blog-card.alt .description:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg);
+        }
+        .blog-card.alt .details {
+          padding-left: 25px;
+        }
+      }
+    </style>
 
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
+    <!-- code folding -->
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Ciencia de Datos</a>
+            <a class="navbar-brand" href="indexDW.html">Desarrollo Web</a>
+          </div>
 
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-.widget_blog_subscription {
-	display: block;
-	margin: 50px auto;
-	width: 60%;
-	max-width: 490px;
-	min-width: 320px;
-	position: relative;
-	overflow: hidden;
-	background-color: #F6F6F2;
-}
-.widget_blog_subscription p {
-	margin: 0;
-	text-align: center;
-}
-.widget_blog_subscription p:first-child {
-	margin: 40px 15px 0;
-	color: #F38630;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 15px;
-	font-family: 'PT Sans Narrow', sans-serif;
-	letter-spacing: 1px;
-}
-.widget_blog_subscription input[type="text"] {
-	margin: 45px 30px;
-	color: #999;
-	padding: 25px 15px !important;
-	text-align: center;
-	width: 100% !important;
-	max-width: calc(100% - 90px);
-	outline: none;
-	border: 0;
-	text-transform: uppercase;
-	font-size: 15px;
-}
-.widget_blog_subscription input[type="text"]::-webkit-input-placeholder {
-	color: #69D2E7;
-}
-.widget_blog_subscription input[type="text"]:-moz-placeholder {
-	color: #69D2E7;
-}
-.widget_blog_subscription input[type="text"]::-moz-placeholder {
-	color: #69D2E7;
-}
-.widget_blog_subscription input[type="text"]:-ms-input-placeholder {
-	color: #69D2E7;
-}
-.widget_blog_subscription input[type="submit"] {
-	margin: 0;
-	background-color: #1f8ab1;
-	color: #fff;
-	padding: 25px 15px !important;
-	text-align: center;
-	width: 100%;
-	max-width: 100%;
-	outline: none;
-	border: 0;
-	text-transform: uppercase;
-	font-size: 20px;
-	cursor: pointer;
-	-webkit-transition: .1s all ease-in-out;
-	-moz-transition: .1s all ease-in-out;
-	-o-transition: .1s all ease-in-out;
-	transition: .1s all ease-in-out;
-}
-.widget_blog_subscription input[type="submit"]:hover {
-	background-color: #F38630;
-}
-.logos {
-    
-filter: url("data:image/svg xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10 */
-filter: gray; /*IE6-9*/
--webkit-filter: grayscale(100%); /*Chrome 19+ & Safari 6+*/
--webkit-transition: all 1.5s ease; /*Fade to color for Chrome and Safari*/
--moz-transition: all 1.5s ease;
--webkit-backface-visibility: hidden; /*Fix for transition flickering*/
-width: 100%;
-height: 100%;
-}
-.logos:hover {
-filter: none;
--webkit-filter: grayscale(0%);
-} 
-.w3l-footer-22-main #movetop {
-  position: fixed;
-  bottom: 12px;
-  right: 15px;
-  z-index: 99;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  width: 38px;
-  height: 38px;
-  background: #67bdff;
-  padding: 0;
-  line-height: 38px;
-  transition: 0.5s ease-out;
-  border-radius: 50%;
-}
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="../index.html">
+                  <span class="fa fa-home"></span>
 
-.w3l-footer-22-main #movetop:hover {
-  background: #213e54;
-}
+                  Inicio
+                </a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/cristian-labra/"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <span class="fab fa fab fa-linkedin"></span>
+                </a>
+              </li>
 
-blockquote  {
-background:white url(comillas.gif) no-repeat scroll 10px 10px;
-padding:25px 0 25px 70px;
-}
-blockquote  p  {
-font-size: 25px;
-color: #333;
-}
-blockquote p cite  {
-color:#666;
-font-size: 20px;
-display:block;
-text-align:right;
-}
+              <li>
+                <a
+                  href="https://github.com/clabca"
+                  rel="nofollow"
+                  target="_blank"
+                >
+                  <span class="fa fa fa fa-github"></span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:clabca@gmail.com">
+                  <span class="far fa far fa-envelope"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container -->
+      </div>
+      <!--/.navbar -->
 
- .blog-card {
-	 display: flex;
-	 flex-direction: column;
-	 margin: 1rem auto;
-	 box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
-	 margin-bottom: 5%;
-	 background: #d1d1d1;
-	 line-height: 1.4;
-	 font-family: sans-serif;
-	 border-radius: 5px;
-	 overflow: hidden;
-	 z-index: 0;
-}
- .blog-card a {
-	 color: inherit;
-}
- .blog-card a:hover {
-	 color: #246da4;
-}
- .blog-card:hover .photo {
-	 transform: scale(1.3) rotate(3deg);
-}
- .blog-card .meta {
-	 position: relative;
-	 z-index: 0;
-	 height: 200px;
-}
- .blog-card .photo {
-	 position: absolute;
-	 top: 0;
-	 right: 0;
-	 bottom: 0;
-	 left: 0;
-	 background-size: cover;
-	 background-position: center;
-	 transition: transform 0.2s;
-}
- .blog-card .details, .blog-card .details ul {
-	 margin: auto;
-	 padding: 0;
-	 list-style: none;
-}
- .blog-card .details {
-	 position: absolute;
-	 top: 0;
-	 bottom: 0;
-	 left: -100%;
-	 margin: auto;
-	 transition: left 0.2s;
-	 background: rgba(0, 0, 0, .6);
-	 color: #fff;
-	 padding: 10px;
-	 width: 100%;
-	 font-size: 0.9rem;
-}
- .blog-card .details a {
-	 text-decoration: dotted underline;
-}
- .blog-card .details ul li {
-	 display: inline-block;
-}
- .blog-card .details .author:before {
-	 font-family: FontAwesome;
-	 margin-right: 10px;
-	 content: "\f007";
-}
- .blog-card .details .date:before {
-	 font-family: FontAwesome;
-	 margin-right: 10px;
-	 content: "\f133";
-}
- .blog-card .details .tags ul:before {
-	 font-family: FontAwesome;
-	 content: "\f02b";
-	 margin-right: 10px;
-}
- .blog-card .details .tags li {
-	 margin-right: 2px;
-}
- .blog-card .details .tags li:first-child {
-	 margin-left: -4px;
-}
- .blog-card .description {
-	 padding: 1rem;
-	 background: #fff;
-	 position: relative;
-	 z-index: 1;
-}
- .blog-card .description h1, .blog-card .description h2 {
-	 font-family: Poppins, sans-serif;
-}
- .blog-card .description h1 {
-	 line-height: 1;
-	 margin: 0;
-	 font-size: 2rem;
-}
- .blog-card .description h2 {
-	 font-size: 1.7rem;
-	 font-weight: 300;
-	 text-transform: uppercase;
-	 color: #a2a2a2;
-	 margin-top: 5px;
-}
- .blog-card .description .read-more {
-	 text-align: right;
-}
- .blog-card .description .read-more a {
-	 color: #246da4;
-	 display: inline-block;
-	 position: relative;
-}
- .blog-card .description .read-more a:after {
-	 content: "\f061";
-	 font-family: FontAwesome;
-	 margin-left: -10px;
-	 opacity: 0;
-	 vertical-align: middle;
-	 transition: margin 0.3s, opacity 0.3s;
-}
- .blog-card .description .read-more a:hover:after {
-	 margin-left: 5px;
-	 opacity: 1;
-}
- .blog-card p {
-	 position: relative;
-	 margin: 1rem 0 0;
-	 font-size:16px;
-	 text-align : justify; 
-	 
-}
- .blog-card p:first-of-type {
-	 margin-top: 1.25rem;
-}
- .blog-card p:first-of-type:before {
-	 content: "";
-	 position: absolute;
-	 height: 5px;
-	 background: #246da4;
-	 width: 35px;
-	 top: -0.75rem;
-	 border-radius: 3px;
-}
- .blog-card:hover .details {
-	 left: 0%;
-}
- @media (min-width: 640px) {
-	 .blog-card {
-		 flex-direction: row;
-		 max-width: auto;
-	}
-	 .blog-card .meta {
-		 flex-basis: 40%;
-		 height: auto;
-	}
-	 .blog-card .description {
-		 flex-basis: 60%;
-	}
-	 .blog-card .description:before {
-		 transform: skewX(-3deg);
-		 content: "";
-		 background: #fff;
-		 width: 30px;
-		 position: absolute;
-		 left: -10px;
-		 top: 0;
-		 bottom: 0;
-		 z-index: -1;
-	}
-	 .blog-card.alt {
-		 flex-direction: row-reverse;
-	}
-	 .blog-card.alt .description:before {
-		 left: inherit;
-		 right: -10px;
-		 transform: skew(3deg);
-	}
-	 .blog-card.alt .details {
-		 padding-left: 25px;
-	}
-}
- 
-</style>
+      <div class="fluid-row" id="header"></div>
 
-<!-- code folding -->
+      <link rel="stylesheet" href="slides/sheetslider.min.css" />
 
+      <br />
+      <!--Sheet Slider-->
 
+      <div class="sheetSlider sh-vertical sh-21r9 sh-auto">
+        <input id="s1" type="radio" name="slide1" checked />
+        <input id="s2" type="radio" name="slide1" />
+        <input id="s3" type="radio" name="slide1" />
+        <input id="s4" type="radio" name="slide1" />
+        <input id="s5" type="radio" name="slide1" />
+        <input id="s6" type="radio" name="slide1" />
+        <input id="s7" type="radio" name="slide1" />
+        <button class="sh-control"></button>
+        <div class="sh__content">
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-1.webp" alt="Inteligencia Empresarial" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Inteligencia Empresarial</h4>
+              <span>Informes avanzados<a href="#urlPage"></a></span>
+            </div>
+          </div>
 
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-2.webp" alt="Portafolios de Inversión" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Portafolios de Inversión</h4>
+              <span>Elaboración de cartera</span>
+            </div>
+          </div>
 
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-3.webp" alt="Evaluación de Proyectos" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Evaluación de Proyectos</h4>
+              <span>Metodología y Aplicación</span>
+            </div>
+          </div>
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-4.webp" alt="Bitcoin" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Criptomonedas</h4>
+              <span>Training y Análisis</span>
+            </div>
+          </div>
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-5.webp" alt="Big Data" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Big Data</h4>
+              <span>Manejo Avanzado de Datos</span>
+            </div>
+          </div>
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-6.webp" alt="Series Temporales" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Series Temporales</h4>
+              <span>Análisis y Pronósticos</span>
+            </div>
+          </div>
+          <!-- Slider Item -->
+          <div class="sh__item">
+            <img src="slides/ima-7.webp" alt="Finanzas Corporativas" />
+            <!-- Item Info -->
+            <div class="sh__meta">
+              <h4>Finanzas Corporativas</h4>
+              <span>Planificación y Presupuesto</span>
+            </div>
+          </div>
+        </div>
+        <!-- .sh__content -->
 
+        <!--botones-->
+        <div class="sh__btns">
+          <label for="s1"></label>
+          <label for="s2"></label>
+          <label for="s3"></label>
+          <label for="s4"></label>
+          <label for="s5"></label>
+          <label for="s6"></label>
+          <label for="s7"></label>
+        </div>
+        <!-- .sh__btns -->
 
-<body>
+        <!--flechas-->
+        <div class="sh__arrows">
+          <label for="s1"></label>
+          <label for="s2"></label>
+          <label for="s3"></label>
+          <label for="s4"></label>
+          <label for="s5"></label>
+          <label for="s6"></label>
+          <label for="s7"></label>
+        </div>
+        <!-- .sh__arrows -->
+      </div>
+      <!-- .sheetSlider -->
 
-  
-<div class="container-fluid main-container">
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Ciencia de Datos</a>
-      <a class="navbar-brand" href="indexDW.html">Desarrollo Web</a>
-    </div>
-
-
-    
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="../index.html">
-    <span class="fa fa-home"></span>
-     
-    Inicio
-  </a>
-</li>
-
-
-
-
-
-    </ul>      
-      <ul class="nav navbar-nav navbar-right">
-
-        
-<li>
-  <a href="https://www.linkedin.com/in/cristian-labra/"rel="nofollow" target="_blank">
-    <span class="fab fa fab fa-linkedin"></span>
-     
-  </a>
-</li>
-
-<li>
-  <a href="https://github.com/clabca"rel="nofollow" target="_blank">
-    <span class="fa fa fa fa-github"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="mailto:clabca@gmail.com">
-    <span class="far fa far fa-envelope"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
-
-
-
-
-</div>
-
-
-
-
-
-<link rel="stylesheet" href="slides/sheetslider.min.css"/>
-
-</head> 
-
-
-  <br>
-<!--Sheet Slider-->
-
-<div class="sheetSlider sh-vertical sh-21r9 sh-auto">
-   <input id="s1" type="radio" name="slide1" checked/> 
-   <input id="s2" type="radio" name="slide1"/> 
-   <input id="s3" type="radio" name="slide1"/>
-   <input id="s4" type="radio" name="slide1"/>
-   <input id="s5" type="radio" name="slide1"/>
-   <input id="s6" type="radio" name="slide1"/>
-   <input id="s7" type="radio" name="slide1"/>
-    <button class="sh-control"></button>
-   <div class="sh__content">
-
-  <!-- Slider Item -->
-  <div class="sh__item">
-      <img src="slides/ima-1.webp" alt="Inteligencia Empresarial"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4> Inteligencia Empresarial</h4>
-            <span>Informes avanzados<a href="#urlPage"></a></span>
-         </div>
+      <div style="text-align: justify">
+        <span style="font-size: large"><br /></span>
+      </div>
+      <h2 style="text-align: justify">
+        <span style="font-size: x-large"
+          >Bienvenido (a) a mi portafolio!!!</span
+        >
+      </h2>
+      <div style="text-align: justify">
+        <span style="font-size: large"><br /></span>
+      </div>
+      <div style="text-align: justify">
+        <span style="font-size: large"
+          >Mi nombre es Cristian Labra Castro Ingeniero Civil Industrial y
+          Científico De Datos con amplia experiencia en jefaturas, planificación
+          y presupuestos. Desarrollé esta página para compartir un resumen de mi
+          praxis y experticia profesional específicamente con gestión de datos
+          en diversas áreas estratégicas. Encontrarás: códigos en lenguaje
+          Python, tratamiento y modelaje de datos; training en Business
+          Intelligence, Portafolios, Big Data, Machine Learning, Neural Network,
+          Time Series, Forecast, Dashboard Financiero y Evaluación de
+          Proyectos.</span
+        >
+      </div>
+      <div style="text-align: justify">
+        <span style="font-size: large"><br /></span>
+      </div>
+      <div style="text-align: justify">
+        <span style="font-size: large"
+          >Para completar, un archivo de prácticas con bases de datos que
+          incluyen extracción, filtrado y manipulación de data. También hay
+          conexiones con Python, actualización de paqueterías y dashboards
+          integrados. Pronósticos con bases de datos reales y comparación de
+          técnicas. De igual modo, encontrarás referencias de trabajos de
+          investigación, actualizaciones y expansiones.</span
+        >
       </div>
 
-  <!-- Slider Item -->
-  <div class="sh__item">
-         <img src="slides/ima-2.webp" alt="Portafolios de Inversión"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4>Portafolios de Inversión</h4>
-            <span>Elaboración de cartera</span>
-         </div>
-      </div>
+      <br />
 
-  <!-- Slider Item -->
-  <div class="sh__item">
-         <img src="slides/ima-3.webp" alt="Evaluación de Proyectos"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4>Evaluación de Proyectos</h4>
-            <span>Metodología y Aplicación</span>
-         </div>
-      </div>
-  <!-- Slider Item -->
-  <div class="sh__item">
-         <img src="slides/ima-4.webp" alt="Bitcoin"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4>Criptomonedas</h4>
-            <span>Training y Análisis</span>
-         </div>
-      </div>
-      <!-- Slider Item -->
-  <div class="sh__item">
-         <img src="slides/ima-5.webp" alt="Big Data"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4>Big Data</h4>
-            <span>Manejo Avanzado de Datos</span>
-         </div>
-      </div>
-    <!-- Slider Item -->
-  <div class="sh__item">
-         <img src="slides/ima-6.webp" alt="Series Temporales"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4>Series Temporales</h4>
-            <span>Análisis y Pronósticos</span>
-         </div>
-      </div>
-      <!-- Slider Item -->
-  <div class="sh__item">
-         <img src="slides/ima-7.webp" alt="Finanzas Corporativas"/>
-         <!-- Item Info -->
-         <div class="sh__meta">
-            <h4>Finanzas Corporativas</h4>
-            <span>Planificación y Presupuesto</span>
-         </div>
-      </div> 
-   </div><!-- .sh__content -->
+      <br />
+      <br />
 
-   <!--botones-->
-   <div class="sh__btns">
-      <label for="s1"></label>
-      <label for="s2"></label>
-      <label for="s3"></label>
-      <label for="s4"></label>
-      <label for="s5"></label>
-      <label for="s6"></label>
-      <label for="s7"></label>
-   </div><!-- .sh__btns -->
+      <h2 style="text-align: center">
+        <span style="font-size: x-large">Contenido de Portafolio:</span>
+      </h2>
+      <br />
+      <hr />
 
-   <!--flechas-->
-   <div class="sh__arrows">
-      <label for="s1"></label>
-      <label for="s2"></label>
-      <label for="s3"></label>
-      <label for="s4"></label>
-      <label for="s5"></label>
-      <label for="s6"></label>
-      <label for="s7"></label>
-   </div><!-- .sh__arrows -->
-   
-</div><!-- .sheetSlider -->
-
-
-
-<div style="text-align: justify;">
-<span style="font-size: large;"><br /></span></div>
-<h2 style="text-align: justify;">
-<span style="font-size: x-large;">Bienvenido (a) a mi portafolio!!!</span></h2>
-<div style="text-align: justify;">
-<span style="font-size: large;"><br /></span></div>
-<div style="text-align: justify;">
-<span style="font-size: large;">Mi nombre es Cristian Labra Castro Ingeniero Civil Industrial y Científico De Datos con amplia experiencia en jefaturas, planificación y presupuestos. Desarrollé esta página para compartir un resumen de mi praxis y experticia profesional específicamente con gestión de datos en diversas áreas estratégicas. Encontrarás: códigos en lenguaje Python, tratamiento y modelaje de datos; training en Business Intelligence, Portafolios, Big Data, Machine Learning, Neural Network, Time Series, Forecast, Dashboard Financiero y Evaluación de Proyectos.</span></div>
-<div style="text-align: justify;">
-<span style="font-size: large;"><br /></span></div>
-<div style="text-align: justify;">
-<span style="font-size: large;">Para completar, un archivo de prácticas con bases de datos que incluyen extracción, filtrado y manipulación de data. También hay conexiones con Python, actualización de paqueterías y dashboards integrados. Pronósticos con bases de datos reales y comparación de técnicas. De igual modo, encontrarás referencias de trabajos de investigación, actualizaciones y expansiones.</span></div>
-</span><br />
-
-<br>
-<br>
- 
-<h2 style="text-align: center;">
-<span style="font-size: x-large;">Contenido de Portafolio:</span></h2>
-<br>
- <hr>
-
-
-<div class="blog-card">
-    <div class="meta">
-      <div class="photo" style="background-image: url(imagenes/imagen-a.webp);" alt="Pronosticos de ventas con Python"></div>
-      <ul class="details">
-        <li class="author"><a href="https://labra.cl">Cristian Labra Castro</a></li>
-        <li class="date">2021</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">Python</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+      <div class="blog-card">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(imagenes/imagen-a.webp)"
+            alt="Pronosticos de ventas con Python"
+          ></div>
+          <ul class="details">
+            <li class="author">
+              <a href="https://labra.cl">Cristian Labra Castro</a>
+            </li>
+            <li class="date">2021</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Python</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>1. Modelo de Pronósticos para Ventas</h1>
-      <h2>Modelización en Python</h2>
-      <p>El área vital de todo negocio y base del presupuesto anual son las ventas. Existen muchos métodos para realizar un pronóstico de ventas a partir de la experiencia y la observación del propio negocio sin embargo, cuando combinamos esos métodos con la modelización estadística los resultados no solo mejoran, sino, que se ahorra tiempo y disminuye el margen de error.</p>
-      <p>En el portafolio se encuentra una metodología para realizar un pronóstico de ventas en volumen a partir del histórico del negocio, se utilizan varios modelos estadísticos a través de las bibliotecas de Python para generar gráficos interactivos que permitirán una mejor manipulación y visualización de datos vanguardista.</p>
-	  <p class="read-more">
-        <a href="01ProyeccionVenta.html" target="_blank">Leer Más</a>
-      </p>
-    </div>
-  </div>
-  <hr>
-  <div class="blog-card alt">
-    <div class="meta">
-      <div class="photo" style="background-image: url(imagenes/imagen-i.webp);" alt="Modelo garch con RStudio"></div>
-      <ul class="details">
-        <li class="author"><a href="https://labra.cl">Cristian Labra Castro</a></li>
-        <li class="date">2020</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">Python</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        </div>
+        <div class="description">
+          <h1>1. Modelo de Pronósticos para Ventas</h1>
+          <h2>Modelización en Python</h2>
+          <p>
+            El área vital de todo negocio y base del presupuesto anual son las
+            ventas. Existen muchos métodos para realizar un pronóstico de ventas
+            a partir de la experiencia y la observación del propio negocio sin
+            embargo, cuando combinamos esos métodos con la modelización
+            estadística los resultados no solo mejoran, sino, que se ahorra
+            tiempo y disminuye el margen de error.
+          </p>
+          <p>
+            En el portafolio se encuentra una metodología para realizar un
+            pronóstico de ventas en volumen a partir del histórico del negocio,
+            se utilizan varios modelos estadísticos a través de las bibliotecas
+            de Python para generar gráficos interactivos que permitirán una
+            mejor manipulación y visualización de datos vanguardista.
+          </p>
+          <p class="read-more">
+            <a href="01ProyeccionVenta.html" target="_blank">Leer Más</a>
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="blog-card alt">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(imagenes/imagen-i.webp)"
+            alt="Modelo garch con RStudio"
+          ></div>
+          <ul class="details">
+            <li class="author">
+              <a href="https://labra.cl">Cristian Labra Castro</a>
+            </li>
+            <li class="date">2020</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Python</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>2. Modelización de la volatilidad y Valor en Riesgo (VaR) del Bitcoin</h1>
-      <h2>Código en Python</h2>
-      <p>En los últimos años las criptomonedas se han convertido en un tema recurrente de emprendedores con los nuevos modelos de negocio. La alternativa de utilizar el Bitcoin como resguardo de valor a largo plazo es una práctica que ha mostrado el interés de especialistas en finanzas y traders reconocidos..</p>
-      <p>En este sentido, el Bitcoin se puede considerar una especie de activo de renta variable con una importante volatilidad y un atractivo rendimiento a largo plazo. El modelo Garch y sus variantes son un instrumento estadístico que permite modelar esa volatilidad y tomar posición para decisiones de compra / venta. El Valor en riesgo VaR evalúa el riesgo y la probabilidad de una pérdida en la decisión y respalda los tiempos de recuperación de la inversión.</p>
-	  <p class="read-more">
-        <a href="02VolatilidadBitcoin.html" target="_blank">Leer más</a>
-      </p>
-    </div>
-  </div>
-  <hr>
- <div class="blog-card">
-    <div class="meta">
-      <div class="photo" style="background-image: url(imagenes/imagen-c.webp);" alt="Machine Learning en Rstudio"></div>
-      <ul class="details">
-        <li class="author"><a href="https://labra.cl">Cristian Labra Castro</a></li>
-        <li class="date">2021</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        </div>
+        <div class="description">
+          <h1>
+            2. Modelización de la volatilidad y Valor en Riesgo (VaR) del
+            Bitcoin
+          </h1>
+          <h2>Código en Python</h2>
+          <p>
+            En los últimos años las criptomonedas se han convertido en un tema
+            recurrente de emprendedores con los nuevos modelos de negocio. La
+            alternativa de utilizar el Bitcoin como resguardo de valor a largo
+            plazo es una práctica que ha mostrado el interés de especialistas en
+            finanzas y traders reconocidos..
+          </p>
+          <p>
+            En este sentido, el Bitcoin se puede considerar una especie de
+            activo de renta variable con una importante volatilidad y un
+            atractivo rendimiento a largo plazo. El modelo Garch y sus variantes
+            son un instrumento estadístico que permite modelar esa volatilidad y
+            tomar posición para decisiones de compra / venta. El Valor en riesgo
+            VaR evalúa el riesgo y la probabilidad de una pérdida en la decisión
+            y respalda los tiempos de recuperación de la inversión.
+          </p>
+          <p class="read-more">
+            <a href="02VolatilidadBitcoin.html" target="_blank">Leer más</a>
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="blog-card">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(imagenes/imagen-c.webp)"
+            alt="Machine Learning en Rstudio"
+          ></div>
+          <ul class="details">
+            <li class="author">
+              <a href="https://labra.cl">Cristian Labra Castro</a>
+            </li>
+            <li class="date">2021</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>3. Aprendizaje Automático (Machine Learning)</h1>
-      <h2>Ciencia de Datos</h2>
-      <p>El Machine Learning se define como el sub-campo de la “Inteligencia Artificial” que se centra en el desarrollo de programas informáticos que tienen acceso a los datos y proporcionan al sistema la capacidad de aprender y mejorar automáticamente, de encontrar patrones en la base de datos sin ninguna intervención o acción humana basado en el tipo de datos, es decir, datos etiquetados o no etiquetados, el enfoque de capacitación del modelo en aprendizaje automático se ha clasificado como aprendizaje supervisado y no supervisado.</p>
-      <p>El Machine Learning permite realizar un tipo de pronóstico que se crea automáticamente a partir de patrones pasados que pueden repetirse en el futuro, a diferencia de los modelos estadísticos, el aprendizaje automático ajusta el pronóstico de manera autónoma, ofrece la posibilidad de realizar combinaciones de variables relacionadas al pronóstico y de un entrenamiento por fases.</p>
-	  <p class="read-more">
-        <a href="03MachineLearning.html" target="_blank">Leer más</a>
-      </p>
-    </div>
-  </div>
-  <hr>
-  <div class="blog-card alt">
-    <div class="meta">
-      <div class="photo" style="background-image: url(imagenes/imagen-f.webp);"></div>
-      <ul class="details">
-        <li class="author"><a href="https://labra.cl">Cristian Labra Castro</a></li>
-        <li class="date">2023</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        </div>
+        <div class="description">
+          <h1>3. Aprendizaje Automático (Machine Learning)</h1>
+          <h2>Ciencia de Datos</h2>
+          <p>
+            El Machine Learning se define como el sub-campo de la “Inteligencia
+            Artificial” que se centra en el desarrollo de programas informáticos
+            que tienen acceso a los datos y proporcionan al sistema la capacidad
+            de aprender y mejorar automáticamente, de encontrar patrones en la
+            base de datos sin ninguna intervención o acción humana basado en el
+            tipo de datos, es decir, datos etiquetados o no etiquetados, el
+            enfoque de capacitación del modelo en aprendizaje automático se ha
+            clasificado como aprendizaje supervisado y no supervisado.
+          </p>
+          <p>
+            El Machine Learning permite realizar un tipo de pronóstico que se
+            crea automáticamente a partir de patrones pasados que pueden
+            repetirse en el futuro, a diferencia de los modelos estadísticos, el
+            aprendizaje automático ajusta el pronóstico de manera autónoma,
+            ofrece la posibilidad de realizar combinaciones de variables
+            relacionadas al pronóstico y de un entrenamiento por fases.
+          </p>
+          <p class="read-more">
+            <a href="03MachineLearning.html" target="_blank">Leer más</a>
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="blog-card alt">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(imagenes/imagen-f.webp)"
+          ></div>
+          <ul class="details">
+            <li class="author">
+              <a href="https://labra.cl">Cristian Labra Castro</a>
+            </li>
+            <li class="date">2023</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>4. Portafolio de Fronteras Eficientes Markowitz</h1>
-      <h2>Gestión de Carteras</h2>
-      <p>Una de las primeras teorías que se deben aplicar para acceder al mundo de los portafolios de inversión es el de las fronteras eficientes perfeccionada por Markowitz.</p>
-      <p>Su idea central es que el inversor racional buscará maximizar sus beneficios (retornos) asumiendo el menor riesgo (volatilidad) posible, esto se puede lograr con la diversificación de la cartera, eligiendo en principio, acciones que tengan una correlación baja o negativa. Por ejemplo, combinando acciones de empresas con distinta actividad económica. </p>
-	  <p>Toda la teoría la aplicaremos con el paquete Portfolio que incluye la versión completa de fronteras eficientes y permite elaborar distintos tipos de portafolios descargando automáticamente los valores de los instrumentos que necesitemos, incluso criptomonedas.</p>
-	  <p class="read-more">
-        <a href="04Markowitz.html" target="_blank">Leer más</a>
-      </p>
-    </div>
-  </div>
-  
-  <br>
+        </div>
+        <div class="description">
+          <h1>4. Portafolio de Fronteras Eficientes Markowitz</h1>
+          <h2>Gestión de Carteras</h2>
+          <p>
+            Una de las primeras teorías que se deben aplicar para acceder al
+            mundo de los portafolios de inversión es el de las fronteras
+            eficientes perfeccionada por Markowitz.
+          </p>
+          <p>
+            Su idea central es que el inversor racional buscará maximizar sus
+            beneficios (retornos) asumiendo el menor riesgo (volatilidad)
+            posible, esto se puede lograr con la diversificación de la cartera,
+            eligiendo en principio, acciones que tengan una correlación baja o
+            negativa. Por ejemplo, combinando acciones de empresas con distinta
+            actividad económica.
+          </p>
+          <p>
+            Toda la teoría la aplicaremos con el paquete Portfolio que incluye
+            la versión completa de fronteras eficientes y permite elaborar
+            distintos tipos de portafolios descargando automáticamente los
+            valores de los instrumentos que necesitemos, incluso criptomonedas.
+          </p>
+          <p class="read-more">
+            <a href="04Markowitz.html" target="_blank">Leer más</a>
+          </p>
+        </div>
+      </div>
 
+      <br />
 
+      <br />
+      <blockquote></blockquote>
+      <br />
+      <br />
 
-<br>
-<blockquote>
+      <!-- 
 <p style="font-size:2.5vw;"><i><span style="color: #4f4f4f;">"Alcanzar cualquier objetivo en el comercio requiere conocimientos de dominio específicos y habilidades técnicas. Pero luego, después de eso, todo es gestión de la mentalidad. Sin embargo, la mayoría de la gente ignora eso; automáticamente piensan que ya han resuelto la última parte </span><strong><span style="color:#006eff;">  y es un error..."</span></i></strong><br><br><cite style="font-size:2vw;">- Yvan Byeajee, Paradigm Shift: <br>Cómo cultivar la ecuanimidad frente a la incertidumbre del mercado</cite></p>
-</blockquote>
-<br>
-<br>
-
-<!-- 
 
 <hr>
  <div class="blog-card">
@@ -1026,64 +1121,95 @@ text-align:right;
 
 -->
 
-  <hr>
- <div class="blog-card">
-    <div class="meta">
-      <div class="photo" style="background-image: url(imagenes/ima-x2.webp);" alt="Power BI"></div>
-      <ul class="details">
-        <li class="author"><a href="https://labra.cl">Cristian Labra Castro</a></li>
-        <li class="date">2020</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">Power BI</a></li>
-            <li><a href="#">Dashboard Financiero</a></li>
-            <li><a href="#">Kpi's Financieros</a></li>
-            <li><a href="#">Business Intelligence</a></li>
+      <hr />
+      <div class="blog-card">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(imagenes/ima-x2.webp)"
+            alt="Power BI"
+          ></div>
+          <ul class="details">
+            <li class="author">
+              <a href="https://labra.cl">Cristian Labra Castro</a>
+            </li>
+            <li class="date">2020</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Power BI</a></li>
+                <li><a href="#">Dashboard Financiero</a></li>
+                <li><a href="#">Kpi's Financieros</a></li>
+                <li><a href="#">Business Intelligence</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>5. Power BI, una de las mejores herramientas BI</h1>
-      <h2>Dashboard Financiero</h2>
-      <p>Un software de Business Intelligence (BI) es una forma de software que ayuda a todo tipo de empresas a medir y mejorar la productividad.</p>
-      <p>El tamaño de la empresa no determina el uso de un software de Business Intelligence. Erróneamente se cree que estas metodologías solo aplican para empresas que manejan altos volúmenes de transacciones olvidando que los procesos de una empresa pequeña pueden estar relacionados con grandes cantidades de datos exógenos. El BI permite utilizar y "medir" esas relaciones.</p>
-	  <p class="read-more">
-        <a href="05PowerBi.html" target="_blank">Leer más</a>
-      </p>
-    </div>
-  </div>
+        </div>
+        <div class="description">
+          <h1>5. Power BI, una de las mejores herramientas BI</h1>
+          <h2>Dashboard Financiero</h2>
+          <p>
+            Un software de Business Intelligence (BI) es una forma de software
+            que ayuda a todo tipo de empresas a medir y mejorar la
+            productividad.
+          </p>
+          <p>
+            El tamaño de la empresa no determina el uso de un software de
+            Business Intelligence. Erróneamente se cree que estas metodologías
+            solo aplican para empresas que manejan altos volúmenes de
+            transacciones olvidando que los procesos de una empresa pequeña
+            pueden estar relacionados con grandes cantidades de datos exógenos.
+            El BI permite utilizar y "medir" esas relaciones.
+          </p>
+          <p class="read-more">
+            <a href="05PowerBi.html" target="_blank">Leer más</a>
+          </p>
+        </div>
+      </div>
 
-
-
-  <div class="blog-card alt">
-    <div class="meta">
-      <div class="photo" style="background-image: url(imagenes/data-mining-blog.webp);" alt="Business Analysis"></div>
-      <ul class="details">
-        <li class="author"><a href="https://labra.cl">Cristian Labra Castro</a></li>
-        <li class="date">2020</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">Data Analytics</a></li>
-            <li><a href="#">Data mining</a></li>
-            <li><a href="#">Business Analysis</a></li>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(imagenes/data-mining-blog.webp)"
+            alt="Business Analysis"
+          ></div>
+          <ul class="details">
+            <li class="author">
+              <a href="https://labra.cl">Cristian Labra Castro</a>
+            </li>
+            <li class="date">2020</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Data Analytics</a></li>
+                <li><a href="#">Data mining</a></li>
+                <li><a href="#">Business Analysis</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="description">
-      <h1>6. Análisis de Datos Segmentación de clientes potenciales (Customer Segmentation)</h1>
-      <h2>Business Analysis</h2>
-      <p>La segmentación de clientes es la práctica de dividir una base de clientes en grupos de individuos que son similares en aspectos específicos relevantes para el marketing, como la edad, el género, los intereses y los hábitos de gasto.</p>
-      
-	  <p class="read-more">
-        <a href="06SegmentacionClientes/ipynb.htm" target="_blank">Leer más</a>
-      </p>
-    </div>
-  </div>
-  <hr>
+        </div>
+        <div class="description">
+          <h1>
+            6. Análisis de Datos Segmentación de clientes potenciales (Customer
+            Segmentation)
+          </h1>
+          <h2>Business Analysis</h2>
+          <p>
+            La segmentación de clientes es la práctica de dividir una base de
+            clientes en grupos de individuos que son similares en aspectos
+            específicos relevantes para el marketing, como la edad, el género,
+            los intereses y los hábitos de gasto.
+          </p>
 
-  <!--
+          <p class="read-more">
+            <a href="06SegmentacionClientes/ipynb.htm" target="_blank"
+              >Leer más</a
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!--
   <div class="blog-card">
     <div class="meta">
       <div class="photo" style="background-image: url(imagenes/ima-x3.webp);" alt="Power BI"></div>
@@ -1140,133 +1266,135 @@ text-align:right;
 <hr>
 
 
--->   
+-->
 
+      <br />
+      <hr />
+    </div>
+    <div class="logos">
+      <div id="apDiv1">
+        <table width="90%" border="0" align="center">
+          <tr>
+            <td><img src="imagenes/logos/Python.webp" /></td>
+            <td width="25"></td>
+            <td><img src="imagenes/logos/VB.webp" /></td>
+            <td width="25"></td>
+            <td><img src="imagenes/logos/Html.webp" /></td>
+            <td width="25"></td>
+            <td><img src="imagenes/logos/Css.webp" /></td>
+            <td width="25"></td>
+            <td><img src="imagenes/logos/Js.webp" /></td>
+            <td width="25"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-<br />
-<hr />
-</div>
-<div class="logos">
-<div id="apDiv1">
+    <section class="w3l-footer-22-main">
+      <button onclick="topFunction()" id="movetop" title="Ir a Inicio">
+        <span class="fa fa-arrow-up"></span>
+      </button>
+    </section>
 
-<table width="90%" border="0" align="center">
-<tr>
-<td><img src="imagenes/logos/Python.webp"></td>
-<td width="25"></td>    
-<td><img src="imagenes/logos/VB.webp"></td>   
-<td width="25"></td>
-<td><img src="imagenes/logos/Html.webp"></td>   
-<td width="25"></td>
-<td><img src="imagenes/logos/Css.webp"></td>   
-<td width="25"></td>  
-<td><img src="imagenes/logos/Js.webp"></td>   
-<td width="25"></td>
-   
-</tr>
-</table>
-</div>
-</div>   
+    <!-- Add icon library -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add font awesome icons -->
+    <br />
 
+    <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+    <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+    <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+    <script src="site_libs/navigation-1.1/tabsets.js"></script>
+    <script>
+      // add bootstrap table styles to pandoc tables
+      function bootstrapStylePandocTables() {
+        $("tr.header")
+          .parent("thead")
+          .parent("table")
+          .addClass("table table-condensed");
+      }
+      $(document).ready(function () {
+        bootstrapStylePandocTables();
+      });
+    </script>
 
-<section class="w3l-footer-22-main">
-<button onclick="topFunction()" id="movetop" title="Ir a Inicio">
-<span class="fa fa-arrow-up"></span>
-</button>
-</section>
-<h5>
-<div>
+    <!-- tabsets -->
 
-<!-- Add icon library -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
-<!-- Add font awesome icons -->
-<br />
+    <script>
+      $(document).ready(function () {
+        window.buildTabsets("TOC");
+      });
 
+      $(document).ready(function () {
+        $(".tabset-dropdown > .nav-tabs > li").click(function () {
+          $(this).parent().toggleClass("nav-tabs-open");
+        });
+      });
+    </script>
 
+    <!-- code folding -->
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script>
+    <script>
+      // manage active state of menu based on current page
+      $(document).ready(function () {
+        // active menu anchor
+        href = window.location.pathname;
+        href = href.substr(href.lastIndexOf("/") + 1);
+        if (href === "") href = "index.html";
+        var menuAnchor = $('a[href="' + href + '"]');
 
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+        // mark it active
+        menuAnchor.parent().addClass("active");
 
+        // if it's got a parent navbar menu mark it active as well
+        menuAnchor.closest("li.dropdown").addClass("active");
+      });
+    </script>
+    <script src="slides/sheetslider.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169665920-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-</script>
+      gtag("config", "UA-169665920-1");
+      gtag("set", { user_id: "USER_ID" });
+      ga("set", "userId", "USER_ID");
+    </script>
+    <!-- move top -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-<!-- tabsets -->
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-<script src="slides/sheetslider.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169665920-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-169665920-1');
-gtag('set', {'user_id': 'USER_ID'}); 
-ga('set', 'userId', 'USER_ID');    
-</script> 
-<!-- move top -->
- <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () {
-                scrollFunction()
-            };
-    
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("movetop").style.display = "block";
-                } else {
-                    document.getElementById("movetop").style.display = "none";
-                }
-            }
-    
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-        <!-- /move top -->  
-</body>
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+  </body>
 </html>
