@@ -1,0 +1,21 @@
+/* Reglas Generales */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.card-text {
+  height: 50px !important;
+  font-size: 16px !important;
+  overflow-y: hidden;
+}
+#footer-color {
+  background: #e83e8c;
+}
+#icons-section {
+  background: #17a2b8;
+}

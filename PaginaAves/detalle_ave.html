@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aves de Chile</title>
+    <!-- Favicon   -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap min integrado CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <h1>Detalles del Ave</h1>
+
+    <div id="ave-details"></div>
+    <div class="row">
+      <script>
+        window.onload = function () {
+          // Obtener la URL de la API desde los parámetros de la URL
+          const urlParams = new URLSearchParams(window.location.search);
+          const apiUrl = urlParams.get("api");
+          console.log("apiurl=" + apiUrl);
+          // Realizar solicitud GET a la API
+          fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              // Construir HTML con los detalles del ave
+              let html = "    <div class='container'>";
+              html +=
+                "<h1><strong>Nombre común:</strong> " +
+                data.name.spanish +
+                "</h1>";
+              html +=
+                "<p><h1><strong>Nombre científico:</strong> " +
+                data.name.latin +
+                "</h1></p>";
+
+              html += "    <div class='row'>";
+              html +=
+                "    <div class='card col-4 p-3 my-3 mx-auto' style='width: 18rem' >";
+              html += "<p><strong>Hábitat:</strong> " + data.map.title + "</p>";
+              html +=
+                "<img src='" + data.map.image + "' width=300 height=300 />";
+              html += "<p>" + data.habitat + "</p>";
+              html += "    </div>";
+
+              html +=
+                "    <div class='container col-4 mx-auto' style='width: 18rem' >";
+
+              html +=
+                "<p><p> <tr> <br>  </p>  <img src='" +
+                data.images.main +
+                "' width=300 height=300 /></p>";
+
+              if (data.audio.file) {
+                html +=
+                  "<audio controls> <source src='" +
+                  data.audio.file +
+                  "' type='audio/wav'" +
+                  "/> </audio> ";
+              }
+              html += "    </div>";
+
+              html +=
+                "<div class='card col-4 p-3 my-3 mx-auto' style='width: 18rem' >";
+
+              html += "<p> </p>";
+
+              html +=
+                "<p><strong>Descripción :</strong> " + data.didyouknow + "</p>";
+              html +=
+                "<p><strong>Migrante :</strong> " + data.migration + "</p>";
+              html +=
+                "<p><strong>Dimorfismo :</strong> " + data.dimorphism + "</p>";
+              html += "<p><strong>Tamaño :</strong> " + data.size + "</p>";
+              html += "<p><strong>Orden :</strong> " + data.order + "</p>";
+              html += "<p><strong>Especie:</strong> " + data.species + "</p>";
+
+              html += "    </div>";
+              html += "    </div>";
+
+              html += "    </div>";
+
+              // Agregar más detalles según sea necesario
+
+              // Insertar HTML en el elemento ave-details
+              document.getElementById("ave-details").innerHTML = html;
+            })
+            .catch((error) => {
+              console.error("Error al obtener datos de la API:", error);
+              document.getElementById("ave-details").innerHTML =
+                "<p>Error: No se pudieron obtener los detalles del ave.</p>";
+            });
+        };
+      </script>
+    </div>
+  </body>
+</html>
