@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo Cloud (AWS) - Portafolio Cristian Labra</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Roboto', sans-serif; display: flex; background-color: #f0f2f5; color: #333; }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background-color: #007acc;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar h2 { margin-bottom: 30px; font-size: 1.8em; }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    .sidebar a:hover { background-color: #005f99; }
+
+    /* Main content */
+    main {
+        margin-left: 270px;
+        padding: 40px 30px;
+        flex: 1;
+    }
+
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { font-size: 2.5em; margin-bottom: 20px; color: #007acc; }
+    header p { font-size: 1.1em; max-width: 900px; margin: 0 auto; line-height: 1.6; color: #555; }
+
+    .content {
+        background: white;
+        border-radius: 15px;
+        padding: 30px 25px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .content h2 {
+        color: #007acc;
+        margin-bottom: 15px;
+    }
+
+    .content ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    footer a { color: #007acc; text-decoration: underline; }
+
+    @media (max-width: 768px) {
+        .sidebar { width: 100%; height: auto; position: relative; flex-direction: row; overflow-x: auto; }
+        main { margin-left: 0; padding: 20px; }
+        .sidebar a { white-space: nowrap; }
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Cristian Labra</h2>
+    <a href="index.html">Inicio</a>
+    <a href="python.html">Python</a>
+    <a href="obtencion_limpieza.html">Obtención y Limpieza</a>
+    <a href="arquitectura_modelado.html">Arquitectura y Modelamiento</a>
+    <a href="bbdd.html">Bases de Datos</a>
+    <a href="ml.html">Machine Learning</a>
+    <a href="bigdata.html">Big Data</a>
+    <a href="integracion.html">Integración</a>
+    <a href="#cloud">Cloud</a>
+</div>
+
+<main>
+    <header>
+        <h1>Módulo Cloud - AWS</h1>
+        <p>En este módulo presento mis conocimientos y experiencia en <strong>Amazon Web Services (AWS)</strong>, la plataforma líder de servicios en la nube. Me centro en el diseño de arquitecturas escalables, seguras y eficientes para entornos de datos.</p>
+    </header>
+
+    <div class="content">
+        <h2>Habilidades en AWS</h2>
+        <ul>
+            <li>Diseño de arquitecturas serverless y orientadas a microservicios.</li>
+            <li>Implementación de pipelines de datos en la nube con AWS Glue y Lambda.</li>
+            <li>Ingesta y almacenamiento de grandes volúmenes en Amazon S3 y Redshift.</li>
+            <li>Despliegue de bases de datos en RDS y DynamoDB.</li>
+            <li>Monitoreo y seguridad con CloudWatch, CloudTrail e IAM.</li>
+        </ul>
+
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li>Automatización de ingesta de datos electorales usando S3, Lambda y Glue.</li>
+            <li>Creación de un Data Lake en S3 con capas de datos crudos, transformados y analíticos.</li>
+            <li>Orquestación de procesos ETL con Step Functions y Glue Jobs.</li>
+            <li>Optimización de cargas de trabajo en Redshift con distribución y sort keys.</li>
+        </ul>
+
+        <h2>Servicios de AWS Utilizados</h2>
+        <ul>
+            <li><strong>Almacenamiento:</strong> S3, Glacier.</li>
+            <li><strong>Bases de datos:</strong> RDS (PostgreSQL, MySQL), DynamoDB, Redshift.</li>
+            <li><strong>Procesamiento:</strong> Lambda, Glue, EMR.</li>
+            <li><strong>Orquestación:</strong> Step Functions, EventBridge.</li>
+            <li><strong>Seguridad y gestión:</strong> IAM, CloudTrail, KMS.</li>
+            <li><strong>Monitoreo:</strong> CloudWatch.</li>
+        </ul>
+    </div>
+</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo Arquitectura y Modelamiento - Portafolio Cristian Labra</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Roboto', sans-serif; display: flex; background-color: #f0f2f5; color: #333; }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background-color: #007acc;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar h2 { margin-bottom: 30px; font-size: 1.8em; }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    .sidebar a:hover { background-color: #005f99; }
+
+    /* Main content */
+    main {
+        margin-left: 270px;
+        padding: 40px 30px;
+        flex: 1;
+    }
+
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { font-size: 2.5em; margin-bottom: 20px; color: #007acc; }
+    header p { font-size: 1.1em; max-width: 900px; margin: 0 auto; line-height: 1.6; color: #555; }
+
+    .content {
+        background: white;
+        border-radius: 15px;
+        padding: 30px 25px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .content h2 {
+        color: #007acc;
+        margin-bottom: 15px;
+    }
+
+    .content ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    footer a { color: #007acc; text-decoration: underline; }
+
+    @media (max-width: 768px) {
+        .sidebar { width: 100%; height: auto; position: relative; flex-direction: row; overflow-x: auto; }
+        main { margin-left: 0; padding: 20px; }
+        .sidebar a { white-space: nowrap; }
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Cristian Labra</h2>
+    <a href="index.html">Inicio</a>
+    <a href="python.html">Python</a>
+    <a href="obtencion_limpieza.html">Obtención y Limpieza</a>
+    <a href="#arquitectura_modelado">Arquitectura y Modelamiento</a>
+    <a href="bbdd.html">Bases de Datos</a>
+    <a href="ml.html">Machine Learning</a>
+    <a href="bigdata.html">Big Data</a>
+    <a href="integracion.html">Integración</a>
+    <a href="cloud.html">Cloud</a>
+</div>
+
+<main>
+    <header>
+        <h1>Módulo Arquitectura y Modelamiento de Datos</h1>
+        <p>Este módulo destaca mis capacidades para diseñar y estructurar arquitecturas de datos eficientes, creando modelos que optimizan el almacenamiento, procesamiento y análisis de información para la toma de decisiones basada en datos.</p>
+    </header>
+
+    <div class="content">
+        <h2>Habilidades en Arquitectura de Datos</h2>
+        <ul>
+            <li>Diseño de arquitecturas escalables para pipelines de datos.</li>
+            <li>Implementación de soluciones de ingesta, almacenamiento y procesamiento eficiente.</li>
+            <li>Integración de sistemas heterogéneos y manejo de flujos de información.</li>
+            <li>Diseño de esquemas de bases de datos relacionales y no relacionales.</li>
+            <li>Optimización de consultas y estructuras para alto rendimiento.</li>
+        </ul>
+
+        <h2>Habilidades en Modelamiento de Datos</h2>
+        <ul>
+            <li>Creación de modelos relacionales y dimensionales para análisis y reporting.</li>
+            <li>Definición de entidades, relaciones y reglas de negocio.</li>
+            <li>Normalización y desnormalización de datos según necesidades de análisis.</li>
+            <li>Construcción de data warehouses y data marts para BI.</li>
+            <li>Uso de diagramas ER y herramientas de modelado para documentación técnica.</li>
+        </ul>
+
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li>Diseño de pipeline de datos para transporte aéreo integrando múltiples fuentes.</li>
+            <li>Implementación de data warehouse para consolidación de reportes estadísticos.</li>
+            <li>Optimización de consultas y modelos para acelerar análisis de grandes volúmenes de datos.</li>
+            <li>Documentación de arquitectura y modelos para replicabilidad y mantenimiento futuro.</li>
+        </ul>
+
+        <h2>Herramientas y Tecnologías</h2>
+        <ul>
+            <li>SQL, PostgreSQL, MySQL</li>
+            <li>NoSQL: MongoDB, Cassandra</li>
+            <li>ETL Tools y Pipelines (Airflow, NiFi, Python)</li>
+            <li>Data Warehousing y BI Tools</li>
+            <li>Diagramas ER y UML para modelamiento</li>
+        </ul>
+    </div>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo Python - Portafolio Cristian Labra</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Roboto', sans-serif; display: flex; background-color: #f0f2f5; color: #333; }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background-color: #007acc;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar h2 { margin-bottom: 30px; font-size: 1.8em; }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    .sidebar a:hover { background-color: #005f99; }
+
+    /* Main content */
+    main {
+        margin-left: 270px;
+        padding: 40px 30px;
+        flex: 1;
+    }
+
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { font-size: 2.5em; margin-bottom: 20px; color: #007acc; }
+    header p { font-size: 1.1em; max-width: 900px; margin: 0 auto; line-height: 1.6; color: #555; }
+
+    .content {
+        background: white;
+        border-radius: 15px;
+        padding: 30px 25px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .content h2 {
+        color: #007acc;
+        margin-bottom: 15px;
+    }
+
+    .content ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    footer a { color: #007acc; text-decoration: underline; }
+
+    @media (max-width: 768px) {
+        .sidebar { width: 100%; height: auto; position: relative; flex-direction: row; overflow-x: auto; }
+        main { margin-left: 0; padding: 20px; }
+        .sidebar a { white-space: nowrap; }
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Cristian Labra</h2>
+    <a href="index.html">Inicio</a>
+    <a href="#python">Python</a>
+    <a href="obtencion_limpieza.html">Obtención y Limpieza</a>
+    <a href="arquitectura_modelado.html">Arquitectura y Modelamiento</a>
+    <a href="bbdd.html">Bases de Datos</a>
+    <a href="ml.html">Machine Learning</a>
+    <a href="bigdata.html">Big Data</a>
+    <a href="integracion.html">Integración</a>
+    <a href="cloud.html">Cloud</a>
+</div>
+
+<main>
+    <header>
+        <h1>Módulo Python</h1>
+        <p>En este módulo se muestran mis habilidades y proyectos relacionados con Python, la herramienta principal que utilizo para manipulación de datos, automatización de tareas y desarrollo de algoritmos eficientes para análisis y transformación de información.</p>
+    </header>
+
+    <div class="content">
+        <h2>Habilidades en Python</h2>
+        <ul>
+            <li>Programación orientada a objetos y buenas prácticas de código.</li>
+            <li>Manipulación de datos con librerías como <strong>Pandas</strong> y <strong>NumPy</strong>.</li>
+            <li>Visualización de datos con <strong>Matplotlib</strong>, <strong>Seaborn</strong> y <strong>Plotly</strong>.</li>
+            <li>Automatización de procesos y scripting para tareas repetitivas.</li>
+            <li>Desarrollo de pipelines para preprocesamiento de datos.</li>
+            <li>Integración con APIs y obtención de datos de distintas fuentes.</li>
+            <li>Uso de entornos virtuales y manejo de dependencias con <strong>pip</strong> y <strong>virtualenv</strong>.</li>
+        </ul>
+
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li>Automatización de reportes estadísticos de transporte aéreo usando Python y Pandas.</li>
+            <li>Pipeline de limpieza y normalización de datos crudos de diversas fuentes para análisis de demanda.</li>
+            <li>Visualización interactiva de indicadores de desempeño en proyectos internos usando Plotly.</li>
+            <li>Extracción de datos de APIs externas para integración en bases de datos SQL.</li>
+        </ul>
+
+        <h2>Recursos y Herramientas</h2>
+        <ul>
+            <li>Python 3.10+</li>
+            <li>Pandas, NumPy, Matplotlib, Seaborn, Plotly</li>
+            <li>Jupyter Notebooks</li>
+            <li>APIs REST</li>
+            <li>Git y GitHub para control de versiones</li>
+        </ul>
+    </div>
+</main>
+
+
+</body>
+</html>

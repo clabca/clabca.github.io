@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Ingeniero de Datos - Cristian Labra</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Roboto', sans-serif; display: flex; background-color: #f0f2f5; color: #333; }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background-color: #007acc;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar h2 { margin-bottom: 30px; font-size: 1.8em; }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    .sidebar a:hover { background-color: #005f99; }
+
+    /* Main content */
+    main {
+        margin-left: 270px;
+        padding: 40px 30px;
+        flex: 1;
+    }
+
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { font-size: 2.8em; margin-bottom: 20px; color: #007acc; }
+    header p { font-size: 1.2em; max-width: 900px; margin: 0 auto; line-height: 1.6; color: #555; }
+
+    .modules {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .module-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        cursor: pointer;
+    }
+
+    .module-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        background-color: #e6f2ff;
+    }
+
+    .module-card img {
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .module-card h2 { color: #007acc; margin-bottom: 10px; }
+    .module-card p { font-size: 0.95em; color: #555; }
+
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    @media (max-width: 768px) {
+        .sidebar { width: 100%; height: auto; position: relative; flex-direction: row; overflow-x: auto; }
+        main { margin-left: 0; padding: 20px; }
+        .sidebar a { white-space: nowrap; }
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Cristian Labra</h2>
+    <a href="#index">Inicio</a>
+    <a href="python.html">Python</a>
+    <a href="obtencion_limpieza.html">Obtención y Limpieza</a>
+    <a href="arquitectura_modelado.html">Arquitectura y Modelamiento</a>
+    <a href="bbdd.html">Bases de Datos</a>
+    <a href="ml.html">Machine Learning</a>
+    <a href="bigdata.html">Big Data</a>
+    <a href="integracion.html">Integración</a>
+    <a href="cloud.html">Cloud</a>
+</div>
+
+<main>
+    <header>
+        <h1>Portafolio de Cristian Labra - Ingeniero de Datos</h1>
+        <p>Como Ingeniero de Datos, poseo experiencia en todo el ciclo de vida de los datos: desde la obtención, limpieza y almacenamiento, hasta su modelamiento, integración, análisis y explotación con Machine Learning. Trabajo con tecnologías modernas en Big Data, bases de datos SQL y NoSQL, arquitecturas escalables en la nube, y procesos de automatización que permiten la toma de decisiones basada en datos.</p>
+    </header>
+
+    <div class="modules">
+        <div class="module-card" id="python" onclick="location.href='python.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Icon">
+            <h2>Python</h2>
+            <p>Dominio de Python para manipulación de datos, automatización, scripting y desarrollo de algoritmos eficientes para análisis y transformación de información.</p>
+        </div>
+
+        <div class="module-card" id="obtencion_limpieza" onclick="location.href='obtencion_limpieza.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" alt="Datos Icon">
+            <h2>Obtención y Limpieza de Datos</h2>
+            <p>Experiencia en extracción de datos de diversas fuentes, limpieza, normalización y validación, asegurando la calidad y consistencia de los datasets.</p>
+        </div>
+
+        <div class="module-card" id="arquitectura_modelado" onclick="location.href='arquitectura_modelado.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/2900/2900873.png" alt="Arquitectura Icon">
+            <h2>Arquitectura y Modelamiento</h2>
+            <p>Diseño de modelos de datos relacionales y dimensionales, construcción de pipelines y arquitecturas escalables para análisis eficiente de la información.</p>
+        </div>
+
+        <div class="module-card" id="bbdd" onclick="location.href='bbdd.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="BBDD Icon">
+            <h2>Bases de Datos</h2>
+            <p>Gestión de bases de datos SQL y NoSQL, optimización de consultas, diseño de esquemas y mantenimiento de sistemas de almacenamiento robustos y seguros.</p>
+        </div>
+
+        <div class="module-card" id="ml" onclick="location.href='ml.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/4380/4380372.png" alt="ML Icon">
+            <h2>Machine Learning</h2>
+            <p>Implementación de modelos predictivos y de clasificación, análisis de patrones y proyecciones de datos usando librerías como scikit-learn, PyCaret y TensorFlow.</p>
+        </div>
+
+        <div class="module-card" id="bigdata" onclick="location.href='bigdata.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Big Data Icon">
+            <h2>Big Data</h2>
+            <p>Procesamiento de grandes volúmenes de datos con Spark, Hadoop y otras tecnologías, asegurando rendimiento, escalabilidad y análisis eficiente en entornos distribuidos.</p>
+        </div>
+
+        <div class="module-card" id="integracion" onclick="location.href='integracion.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966376.png" alt="Integración Icon">
+            <h2>Integración</h2>
+            <p>Creación de pipelines de datos y ETL, integración entre sistemas heterogéneos, y automatización de flujos de información para mejorar la toma de decisiones.</p>
+        </div>
+
+        <div class="module-card" id="cloud" onclick="location.href='cloud.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="Cloud Icon">
+            <h2>Cloud</h2>
+            <p>Despliegue de soluciones en la nube (AWS, Azure, GCP), implementación de infraestructuras escalables y gestión de servicios para almacenamiento, procesamiento y análisis de datos.</p>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>
